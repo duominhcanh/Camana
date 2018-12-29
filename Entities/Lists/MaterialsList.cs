@@ -50,10 +50,7 @@ namespace Entities.Lists
                 String newMaterID = materialsTable.Rows[row][0].ToString();
                 String newMaterName = materialsTable.Rows[row][1].ToString();
                 double newMaterAmmount = Double.Parse(materialsTable.Rows[row][2].ToString());
-
-
                 Materials newMaters = new Materials(newMaterID, newMaterName, newMaterAmmount);
-
                 this.materList.Add(newMaters);
             }
         }
