@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLinks", "DataLinks\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{280811EF-514E-4171-BAD5-2BE805D1D05D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingThings", "TestingThings\TestingThings.csproj", "{1E03DBA4-4303-42A5-AE5F-88891409B5F5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphics", "Graphics\Graphics.csproj", "{203237C4-8C01-4F21-8DF7-D9229206446E}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{280811EF-514E-4171-BAD5-2BE805D1D05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{280811EF-514E-4171-BAD5-2BE805D1D05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{280811EF-514E-4171-BAD5-2BE805D1D05D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E03DBA4-4303-42A5-AE5F-88891409B5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E03DBA4-4303-42A5-AE5F-88891409B5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E03DBA4-4303-42A5-AE5F-88891409B5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E03DBA4-4303-42A5-AE5F-88891409B5F5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{203237C4-8C01-4F21-8DF7-D9229206446E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{203237C4-8C01-4F21-8DF7-D9229206446E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{203237C4-8C01-4F21-8DF7-D9229206446E}.Release|Any CPU.ActiveCfg = Release|Any CPU

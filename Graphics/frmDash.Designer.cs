@@ -43,14 +43,14 @@
             this.lblVersion = new System.Windows.Forms.Label();
             this.lblAppName = new System.Windows.Forms.Label();
             this.btnPeople = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.ptbCafe = new System.Windows.Forms.PictureBox();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlTitle = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.ptbCafe = new System.Windows.Forms.PictureBox();
             this.pnlLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCafe)).BeginInit();
             this.pnlMenu.SuspendLayout();
             this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCafe)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalary
@@ -244,29 +244,6 @@
             this.btnPeople.UseVisualStyleBackColor = false;
             this.btnPeople.Click += new System.EventHandler(this.btnPeople_Click);
             // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.White;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(669, 1);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(28, 27);
-            this.btnClose.TabIndex = 22;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // ptbCafe
-            // 
-            this.ptbCafe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ptbCafe.Location = new System.Drawing.Point(572, 234);
-            this.ptbCafe.Name = "ptbCafe";
-            this.ptbCafe.Size = new System.Drawing.Size(128, 121);
-            this.ptbCafe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbCafe.TabIndex = 21;
-            this.ptbCafe.TabStop = false;
-            // 
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.White;
@@ -288,6 +265,30 @@
             this.pnlTitle.Size = new System.Drawing.Size(218, 76);
             this.pnlTitle.TabIndex = 24;
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.BackgroundImage = global::Graphics.Properties.Resources.close_1_;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Location = new System.Drawing.Point(669, 1);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(28, 27);
+            this.btnClose.TabIndex = 22;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // ptbCafe
+            // 
+            this.ptbCafe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbCafe.Location = new System.Drawing.Point(572, 234);
+            this.ptbCafe.Name = "ptbCafe";
+            this.ptbCafe.Size = new System.Drawing.Size(128, 121);
+            this.ptbCafe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbCafe.TabIndex = 21;
+            this.ptbCafe.TabStop = false;
+            // 
             // frmDash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,10 +309,10 @@
             this.Load += new System.EventHandler(this.frmDash_Load);
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCafe)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCafe)).EndInit();
             this.ResumeLayout(false);
 
         }

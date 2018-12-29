@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStorage));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pnlEditAction = new System.Windows.Forms.Panel();
-            this.btnEditCancel = new System.Windows.Forms.Button();
-            this.btnEditAccept = new System.Windows.Forms.Button();
             this.lblEditID = new System.Windows.Forms.Label();
-            this.btnEditPrevProd = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnEditCloseProd = new System.Windows.Forms.Button();
-            this.btnEditNextProd = new System.Windows.Forms.Button();
-            this.btnAddEmpClose = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -55,9 +48,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtNewName = new System.Windows.Forms.TextBox();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.btnMoreInfo = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.lblMoreInfo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -73,12 +63,9 @@
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.btnFilter = new System.Windows.Forms.Button();
             this.pnlLeft = new System.Windows.Forms.Panel();
-            this.btnMode1 = new System.Windows.Forms.Button();
-            this.btnMode2 = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.btnReload = new System.Windows.Forms.Button();
             this.btnDeleteProd = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtEditName = new System.Windows.Forms.TextBox();
@@ -92,16 +79,11 @@
             this.pnlResourceInfo = new System.Windows.Forms.Panel();
             this.lbxHistory = new System.Windows.Forms.ListBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnEditPrevMater = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnEditCloseMater = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnEditNextMater = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -109,7 +91,6 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.pnlNewResource = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.btnMaterNewClose = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -123,6 +104,24 @@
             this.panel19 = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnEditPrevMater = new System.Windows.Forms.Button();
+            this.btnEditCloseMater = new System.Windows.Forms.Button();
+            this.btnEditNextMater = new System.Windows.Forms.Button();
+            this.btnMaterNewClose = new System.Windows.Forms.Button();
+            this.btnAddEmpClose = new System.Windows.Forms.Button();
+            this.btnMoreInfo = new System.Windows.Forms.Button();
+            this.btnMode1 = new System.Windows.Forms.Button();
+            this.btnMode2 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
+            this.btnEditCancel = new System.Windows.Forms.Button();
+            this.btnEditAccept = new System.Windows.Forms.Button();
+            this.btnEditPrevProd = new System.Windows.Forms.Button();
+            this.btnEditCloseProd = new System.Windows.Forms.Button();
+            this.btnEditNextProd = new System.Windows.Forms.Button();
             this.pnlEditAction.SuspendLayout();
             this.pnlAddPro.SuspendLayout();
             this.pnlLeft.SuspendLayout();
@@ -151,30 +150,6 @@
             this.pnlEditAction.Size = new System.Drawing.Size(87, 38);
             this.pnlEditAction.TabIndex = 21;
             // 
-            // btnEditCancel
-            // 
-            this.btnEditCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditCancel.BackgroundImage")));
-            this.btnEditCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditCancel.FlatAppearance.BorderSize = 0;
-            this.btnEditCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCancel.Location = new System.Drawing.Point(3, 5);
-            this.btnEditCancel.Name = "btnEditCancel";
-            this.btnEditCancel.Size = new System.Drawing.Size(30, 30);
-            this.btnEditCancel.TabIndex = 20;
-            this.btnEditCancel.UseVisualStyleBackColor = true;
-            // 
-            // btnEditAccept
-            // 
-            this.btnEditAccept.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditAccept.BackgroundImage")));
-            this.btnEditAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditAccept.FlatAppearance.BorderSize = 0;
-            this.btnEditAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditAccept.Location = new System.Drawing.Point(48, 5);
-            this.btnEditAccept.Name = "btnEditAccept";
-            this.btnEditAccept.Size = new System.Drawing.Size(30, 30);
-            this.btnEditAccept.TabIndex = 20;
-            this.btnEditAccept.UseVisualStyleBackColor = true;
-            // 
             // lblEditID
             // 
             this.lblEditID.BackColor = System.Drawing.Color.White;
@@ -187,18 +162,6 @@
             this.lblEditID.Text = "ID";
             this.lblEditID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnEditPrevProd
-            // 
-            this.btnEditPrevProd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditPrevProd.BackgroundImage")));
-            this.btnEditPrevProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditPrevProd.FlatAppearance.BorderSize = 0;
-            this.btnEditPrevProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditPrevProd.Location = new System.Drawing.Point(3, 13);
-            this.btnEditPrevProd.Name = "btnEditPrevProd";
-            this.btnEditPrevProd.Size = new System.Drawing.Size(30, 30);
-            this.btnEditPrevProd.TabIndex = 18;
-            this.btnEditPrevProd.UseVisualStyleBackColor = true;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -206,44 +169,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(253, 10);
             this.panel3.TabIndex = 3;
-            // 
-            // btnEditCloseProd
-            // 
-            this.btnEditCloseProd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditCloseProd.BackgroundImage")));
-            this.btnEditCloseProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditCloseProd.FlatAppearance.BorderSize = 0;
-            this.btnEditCloseProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCloseProd.Location = new System.Drawing.Point(109, 12);
-            this.btnEditCloseProd.Name = "btnEditCloseProd";
-            this.btnEditCloseProd.Size = new System.Drawing.Size(30, 30);
-            this.btnEditCloseProd.TabIndex = 20;
-            this.btnEditCloseProd.UseVisualStyleBackColor = true;
-            this.btnEditCloseProd.Click += new System.EventHandler(this.btnEditClose_Click);
-            // 
-            // btnEditNextProd
-            // 
-            this.btnEditNextProd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditNextProd.BackgroundImage")));
-            this.btnEditNextProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditNextProd.FlatAppearance.BorderSize = 0;
-            this.btnEditNextProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditNextProd.Location = new System.Drawing.Point(220, 13);
-            this.btnEditNextProd.Name = "btnEditNextProd";
-            this.btnEditNextProd.Size = new System.Drawing.Size(30, 30);
-            this.btnEditNextProd.TabIndex = 17;
-            this.btnEditNextProd.UseVisualStyleBackColor = true;
-            // 
-            // btnAddEmpClose
-            // 
-            this.btnAddEmpClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddEmpClose.BackgroundImage")));
-            this.btnAddEmpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddEmpClose.FlatAppearance.BorderSize = 0;
-            this.btnAddEmpClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddEmpClose.Location = new System.Drawing.Point(109, 12);
-            this.btnAddEmpClose.Name = "btnAddEmpClose";
-            this.btnAddEmpClose.Size = new System.Drawing.Size(30, 30);
-            this.btnAddEmpClose.TabIndex = 20;
-            this.btnAddEmpClose.UseVisualStyleBackColor = true;
-            this.btnAddEmpClose.Click += new System.EventHandler(this.btnAddEmpClose_Click);
             // 
             // label18
             // 
@@ -395,44 +320,6 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(234, 1);
             this.panel17.TabIndex = 3;
-            // 
-            // btnMoreInfo
-            // 
-            this.btnMoreInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMoreInfo.BackgroundImage")));
-            this.btnMoreInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMoreInfo.FlatAppearance.BorderSize = 0;
-            this.btnMoreInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMoreInfo.Location = new System.Drawing.Point(16, 230);
-            this.btnMoreInfo.Name = "btnMoreInfo";
-            this.btnMoreInfo.Size = new System.Drawing.Size(50, 50);
-            this.btnMoreInfo.TabIndex = 5;
-            this.btnMoreInfo.UseVisualStyleBackColor = true;
-            this.btnMoreInfo.Click += new System.EventHandler(this.btnMoreInfo_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
-            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(180, 153);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(50, 50);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(21, 153);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(50, 50);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblMoreInfo
             // 
@@ -608,33 +495,6 @@
             this.pnlLeft.Size = new System.Drawing.Size(254, 560);
             this.pnlLeft.TabIndex = 7;
             // 
-            // btnMode1
-            // 
-            this.btnMode1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMode1.BackgroundImage")));
-            this.btnMode1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMode1.FlatAppearance.BorderSize = 0;
-            this.btnMode1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMode1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMode1.Location = new System.Drawing.Point(53, 7);
-            this.btnMode1.Name = "btnMode1";
-            this.btnMode1.Size = new System.Drawing.Size(50, 50);
-            this.btnMode1.TabIndex = 5;
-            this.btnMode1.UseVisualStyleBackColor = true;
-            this.btnMode1.Click += new System.EventHandler(this.btnMode1_Click);
-            // 
-            // btnMode2
-            // 
-            this.btnMode2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMode2.BackgroundImage")));
-            this.btnMode2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMode2.FlatAppearance.BorderSize = 0;
-            this.btnMode2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMode2.Location = new System.Drawing.Point(135, 7);
-            this.btnMode2.Name = "btnMode2";
-            this.btnMode2.Size = new System.Drawing.Size(50, 50);
-            this.btnMode2.TabIndex = 5;
-            this.btnMode2.UseVisualStyleBackColor = true;
-            this.btnMode2.Click += new System.EventHandler(this.btnMode2_Click);
-            // 
             // label25
             // 
             this.label25.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -664,19 +524,6 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(253, 10);
             this.panel18.TabIndex = 3;
-            // 
-            // btnReload
-            // 
-            this.btnReload.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReload.BackgroundImage")));
-            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReload.FlatAppearance.BorderSize = 0;
-            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReload.Location = new System.Drawing.Point(103, 153);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(50, 50);
-            this.btnReload.TabIndex = 5;
-            this.btnReload.UseVisualStyleBackColor = true;
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnDeleteProd
             // 
@@ -861,30 +708,6 @@
             this.panel7.Size = new System.Drawing.Size(87, 38);
             this.panel7.TabIndex = 21;
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 30);
-            this.button1.TabIndex = 20;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(48, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 30);
-            this.button2.TabIndex = 20;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.White;
@@ -897,18 +720,6 @@
             this.label6.Text = "ID";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnEditPrevMater
-            // 
-            this.btnEditPrevMater.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditPrevMater.BackgroundImage")));
-            this.btnEditPrevMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditPrevMater.FlatAppearance.BorderSize = 0;
-            this.btnEditPrevMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditPrevMater.Location = new System.Drawing.Point(3, 13);
-            this.btnEditPrevMater.Name = "btnEditPrevMater";
-            this.btnEditPrevMater.Size = new System.Drawing.Size(30, 30);
-            this.btnEditPrevMater.TabIndex = 18;
-            this.btnEditPrevMater.UseVisualStyleBackColor = true;
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -916,19 +727,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(253, 10);
             this.panel8.TabIndex = 3;
-            // 
-            // btnEditCloseMater
-            // 
-            this.btnEditCloseMater.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditCloseMater.BackgroundImage")));
-            this.btnEditCloseMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditCloseMater.FlatAppearance.BorderSize = 0;
-            this.btnEditCloseMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCloseMater.Location = new System.Drawing.Point(109, 12);
-            this.btnEditCloseMater.Name = "btnEditCloseMater";
-            this.btnEditCloseMater.Size = new System.Drawing.Size(30, 30);
-            this.btnEditCloseMater.TabIndex = 20;
-            this.btnEditCloseMater.UseVisualStyleBackColor = true;
-            this.btnEditCloseMater.Click += new System.EventHandler(this.btnMaterInfoClose_Click);
             // 
             // label17
             // 
@@ -959,18 +757,6 @@
             this.label13.Size = new System.Drawing.Size(234, 21);
             this.label13.TabIndex = 4;
             this.label13.Text = "Tên";
-            // 
-            // btnEditNextMater
-            // 
-            this.btnEditNextMater.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditNextMater.BackgroundImage")));
-            this.btnEditNextMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditNextMater.FlatAppearance.BorderSize = 0;
-            this.btnEditNextMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditNextMater.Location = new System.Drawing.Point(220, 13);
-            this.btnEditNextMater.Name = "btnEditNextMater";
-            this.btnEditNextMater.Size = new System.Drawing.Size(30, 30);
-            this.btnEditNextMater.TabIndex = 17;
-            this.btnEditNextMater.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -1048,19 +834,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(253, 10);
             this.panel15.TabIndex = 3;
-            // 
-            // btnMaterNewClose
-            // 
-            this.btnMaterNewClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMaterNewClose.BackgroundImage")));
-            this.btnMaterNewClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMaterNewClose.FlatAppearance.BorderSize = 0;
-            this.btnMaterNewClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaterNewClose.Location = new System.Drawing.Point(109, 12);
-            this.btnMaterNewClose.Name = "btnMaterNewClose";
-            this.btnMaterNewClose.Size = new System.Drawing.Size(30, 30);
-            this.btnMaterNewClose.TabIndex = 20;
-            this.btnMaterNewClose.UseVisualStyleBackColor = true;
-            this.btnMaterNewClose.Click += new System.EventHandler(this.btnMaterNewClose_Click);
             // 
             // label19
             // 
@@ -1191,6 +964,232 @@
             this.panel20.Size = new System.Drawing.Size(234, 1);
             this.panel20.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Graphics.Properties.Resources.refresh;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(3, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(30, 30);
+            this.button1.TabIndex = 20;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::Graphics.Properties.Resources.check;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(48, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(30, 30);
+            this.button2.TabIndex = 20;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnEditPrevMater
+            // 
+            this.btnEditPrevMater.BackgroundImage = global::Graphics.Properties.Resources.left_arrow__1_;
+            this.btnEditPrevMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditPrevMater.FlatAppearance.BorderSize = 0;
+            this.btnEditPrevMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditPrevMater.Location = new System.Drawing.Point(3, 13);
+            this.btnEditPrevMater.Name = "btnEditPrevMater";
+            this.btnEditPrevMater.Size = new System.Drawing.Size(30, 30);
+            this.btnEditPrevMater.TabIndex = 18;
+            this.btnEditPrevMater.UseVisualStyleBackColor = true;
+            // 
+            // btnEditCloseMater
+            // 
+            this.btnEditCloseMater.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnEditCloseMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditCloseMater.FlatAppearance.BorderSize = 0;
+            this.btnEditCloseMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCloseMater.Location = new System.Drawing.Point(109, 12);
+            this.btnEditCloseMater.Name = "btnEditCloseMater";
+            this.btnEditCloseMater.Size = new System.Drawing.Size(30, 30);
+            this.btnEditCloseMater.TabIndex = 20;
+            this.btnEditCloseMater.UseVisualStyleBackColor = true;
+            this.btnEditCloseMater.Click += new System.EventHandler(this.btnMaterInfoClose_Click);
+            // 
+            // btnEditNextMater
+            // 
+            this.btnEditNextMater.BackgroundImage = global::Graphics.Properties.Resources.right_arrow__1_;
+            this.btnEditNextMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditNextMater.FlatAppearance.BorderSize = 0;
+            this.btnEditNextMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditNextMater.Location = new System.Drawing.Point(220, 13);
+            this.btnEditNextMater.Name = "btnEditNextMater";
+            this.btnEditNextMater.Size = new System.Drawing.Size(30, 30);
+            this.btnEditNextMater.TabIndex = 17;
+            this.btnEditNextMater.UseVisualStyleBackColor = true;
+            // 
+            // btnMaterNewClose
+            // 
+            this.btnMaterNewClose.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnMaterNewClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMaterNewClose.FlatAppearance.BorderSize = 0;
+            this.btnMaterNewClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaterNewClose.Location = new System.Drawing.Point(109, 12);
+            this.btnMaterNewClose.Name = "btnMaterNewClose";
+            this.btnMaterNewClose.Size = new System.Drawing.Size(30, 30);
+            this.btnMaterNewClose.TabIndex = 20;
+            this.btnMaterNewClose.UseVisualStyleBackColor = true;
+            this.btnMaterNewClose.Click += new System.EventHandler(this.btnMaterNewClose_Click);
+            // 
+            // btnAddEmpClose
+            // 
+            this.btnAddEmpClose.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnAddEmpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddEmpClose.FlatAppearance.BorderSize = 0;
+            this.btnAddEmpClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEmpClose.Location = new System.Drawing.Point(109, 12);
+            this.btnAddEmpClose.Name = "btnAddEmpClose";
+            this.btnAddEmpClose.Size = new System.Drawing.Size(30, 30);
+            this.btnAddEmpClose.TabIndex = 20;
+            this.btnAddEmpClose.UseVisualStyleBackColor = true;
+            this.btnAddEmpClose.Click += new System.EventHandler(this.btnAddEmpClose_Click);
+            // 
+            // btnMoreInfo
+            // 
+            this.btnMoreInfo.BackgroundImage = global::Graphics.Properties.Resources.three_dots;
+            this.btnMoreInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMoreInfo.FlatAppearance.BorderSize = 0;
+            this.btnMoreInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMoreInfo.Location = new System.Drawing.Point(16, 230);
+            this.btnMoreInfo.Name = "btnMoreInfo";
+            this.btnMoreInfo.Size = new System.Drawing.Size(50, 50);
+            this.btnMoreInfo.TabIndex = 5;
+            this.btnMoreInfo.UseVisualStyleBackColor = true;
+            this.btnMoreInfo.Click += new System.EventHandler(this.btnMoreInfo_Click);
+            // 
+            // btnMode1
+            // 
+            this.btnMode1.BackgroundImage = global::Graphics.Properties.Resources.coffee_pot;
+            this.btnMode1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMode1.FlatAppearance.BorderSize = 0;
+            this.btnMode1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMode1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMode1.Location = new System.Drawing.Point(53, 7);
+            this.btnMode1.Name = "btnMode1";
+            this.btnMode1.Size = new System.Drawing.Size(50, 50);
+            this.btnMode1.TabIndex = 5;
+            this.btnMode1.UseVisualStyleBackColor = true;
+            this.btnMode1.Click += new System.EventHandler(this.btnMode1_Click);
+            // 
+            // btnMode2
+            // 
+            this.btnMode2.BackgroundImage = global::Graphics.Properties.Resources.coffees;
+            this.btnMode2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMode2.FlatAppearance.BorderSize = 0;
+            this.btnMode2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMode2.Location = new System.Drawing.Point(135, 7);
+            this.btnMode2.Name = "btnMode2";
+            this.btnMode2.Size = new System.Drawing.Size(50, 50);
+            this.btnMode2.TabIndex = 5;
+            this.btnMode2.UseVisualStyleBackColor = true;
+            this.btnMode2.Click += new System.EventHandler(this.btnMode2_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackgroundImage = global::Graphics.Properties.Resources.database;
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Location = new System.Drawing.Point(180, 153);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(50, 50);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackgroundImage = global::Graphics.Properties.Resources.plus;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Location = new System.Drawing.Point(21, 153);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(50, 50);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnReload
+            // 
+            this.btnReload.BackgroundImage = global::Graphics.Properties.Resources.refresh;
+            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReload.FlatAppearance.BorderSize = 0;
+            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReload.Location = new System.Drawing.Point(103, 153);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(50, 50);
+            this.btnReload.TabIndex = 5;
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
+            // btnEditCancel
+            // 
+            this.btnEditCancel.BackgroundImage = global::Graphics.Properties.Resources.refresh;
+            this.btnEditCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditCancel.FlatAppearance.BorderSize = 0;
+            this.btnEditCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCancel.Location = new System.Drawing.Point(3, 5);
+            this.btnEditCancel.Name = "btnEditCancel";
+            this.btnEditCancel.Size = new System.Drawing.Size(30, 30);
+            this.btnEditCancel.TabIndex = 20;
+            this.btnEditCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnEditAccept
+            // 
+            this.btnEditAccept.BackgroundImage = global::Graphics.Properties.Resources.check;
+            this.btnEditAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditAccept.FlatAppearance.BorderSize = 0;
+            this.btnEditAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditAccept.Location = new System.Drawing.Point(48, 5);
+            this.btnEditAccept.Name = "btnEditAccept";
+            this.btnEditAccept.Size = new System.Drawing.Size(30, 30);
+            this.btnEditAccept.TabIndex = 20;
+            this.btnEditAccept.UseVisualStyleBackColor = true;
+            // 
+            // btnEditPrevProd
+            // 
+            this.btnEditPrevProd.BackgroundImage = global::Graphics.Properties.Resources.left_arrow__1_;
+            this.btnEditPrevProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditPrevProd.FlatAppearance.BorderSize = 0;
+            this.btnEditPrevProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditPrevProd.Location = new System.Drawing.Point(3, 13);
+            this.btnEditPrevProd.Name = "btnEditPrevProd";
+            this.btnEditPrevProd.Size = new System.Drawing.Size(30, 30);
+            this.btnEditPrevProd.TabIndex = 18;
+            this.btnEditPrevProd.UseVisualStyleBackColor = true;
+            // 
+            // btnEditCloseProd
+            // 
+            this.btnEditCloseProd.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnEditCloseProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditCloseProd.FlatAppearance.BorderSize = 0;
+            this.btnEditCloseProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCloseProd.Location = new System.Drawing.Point(109, 12);
+            this.btnEditCloseProd.Name = "btnEditCloseProd";
+            this.btnEditCloseProd.Size = new System.Drawing.Size(30, 30);
+            this.btnEditCloseProd.TabIndex = 20;
+            this.btnEditCloseProd.UseVisualStyleBackColor = true;
+            this.btnEditCloseProd.Click += new System.EventHandler(this.btnEditClose_Click);
+            // 
+            // btnEditNextProd
+            // 
+            this.btnEditNextProd.BackgroundImage = global::Graphics.Properties.Resources.right_arrow__1_;
+            this.btnEditNextProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditNextProd.FlatAppearance.BorderSize = 0;
+            this.btnEditNextProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditNextProd.Location = new System.Drawing.Point(220, 13);
+            this.btnEditNextProd.Name = "btnEditNextProd";
+            this.btnEditNextProd.Size = new System.Drawing.Size(30, 30);
+            this.btnEditNextProd.TabIndex = 17;
+            this.btnEditNextProd.UseVisualStyleBackColor = true;
+            // 
             // frmStorage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1198,8 +1197,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(1174, 649);
             this.Controls.Add(this.pnlResourceInfo);
-            this.Controls.Add(this.pnlNewResource);
             this.Controls.Add(this.pnlAddPro);
+            this.Controls.Add(this.pnlNewResource);
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.pnlLeftInfo);
             this.Controls.Add(this.pnlTop);
