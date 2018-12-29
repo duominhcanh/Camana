@@ -44,13 +44,13 @@
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID";
             this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblID.Click += new System.EventHandler(this.Clicked);
+            this.lblID.DoubleClick += new System.EventHandler(this.Clicked);
             this.lblID.MouseEnter += new System.EventHandler(this.SaleProductListItem_MouseEnter);
             this.lblID.MouseLeave += new System.EventHandler(this.SaleProductListItem_MouseLeave);
             // 
             // lblName
             // 
-            this.lblName.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblName.Location = new System.Drawing.Point(99, 18);
             this.lblName.Name = "lblName";
@@ -58,7 +58,7 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Tên";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblName.Click += new System.EventHandler(this.Clicked);
+            this.lblName.DoubleClick += new System.EventHandler(this.Clicked);
             this.lblName.MouseEnter += new System.EventHandler(this.SaleProductListItem_MouseEnter);
             this.lblName.MouseLeave += new System.EventHandler(this.SaleProductListItem_MouseLeave);
             // 
@@ -72,7 +72,7 @@
             this.lblPrice.TabIndex = 0;
             this.lblPrice.Text = "Giá";
             this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblPrice.Click += new System.EventHandler(this.Clicked);
+            this.lblPrice.DoubleClick += new System.EventHandler(this.Clicked);
             this.lblPrice.MouseEnter += new System.EventHandler(this.SaleProductListItem_MouseEnter);
             this.lblPrice.MouseLeave += new System.EventHandler(this.SaleProductListItem_MouseLeave);
             // 
@@ -97,7 +97,7 @@
             this.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "SaleProductListItem";
             this.Size = new System.Drawing.Size(407, 77);
-            this.Click += new System.EventHandler(this.Clicked);
+            this.DoubleClick += new System.EventHandler(this.Clicked);
             this.MouseEnter += new System.EventHandler(this.SaleProductListItem_MouseEnter);
             this.MouseLeave += new System.EventHandler(this.SaleProductListItem_MouseLeave);
             this.ResumeLayout(false);
