@@ -10,8 +10,8 @@ namespace DataLinks
         private SqlDataAdapter Adapter;
         private DataSet SetData;
 
-        //private String ServerName = "DESKTOP-6GI6MES\\SQLEXPRESS";
-        private String ServerName = "DESKTOP-87OOTCP";
+        private String ServerName = "DESKTOP-6GI6MES\\SQLEXPRESS";
+        //private String ServerName = "DESKTOP-87OOTCP";
         private String DbName = "QLCAFE";
 
         public SqlLink()

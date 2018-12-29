@@ -3,3 +3,4 @@ D:\cswp\Camana\DataLinks\bin\Debug\DataLinks.pdb
 D:\cswp\Camana\DataLinks\obj\Debug\DataLinks.csproj.CoreCompileInputs.cache
 D:\cswp\Camana\DataLinks\obj\Debug\DataLinks.dll
 D:\cswp\Camana\DataLinks\obj\Debug\DataLinks.pdb
+D:\cswp\Camana\DataLinks\obj\Debug\DataLinks.csprojAssemblyReference.cache
