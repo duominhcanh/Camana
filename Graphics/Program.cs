@@ -16,7 +16,7 @@ namespace Graphics
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDash());
+            Application.Run(new frmSale());
         }
     }
 }
