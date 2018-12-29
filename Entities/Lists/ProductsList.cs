@@ -103,5 +103,86 @@ namespace Entities.Lists
             }
         }
 
+        public void saveChanges()
+        {
+            foreach (String proID in this.newProductID)
+            {
+                foreach (Products currentPro in this.productList)
+                {
+                    if (currentPro.ID == proID)
+                    {
+
+                        String nonSelectString =
+                        "insert " + "into " + " PRODUCT " +
+                        "(" + "ProductID, " + " ProductName, " + "Price " + ") " +
+                        "values( " +
+                        "'" + currentPro.ID + "', " +
+                        "N'" + currentPro.Name + "', " +
+                         + currentPro.Price  + ")";
+                        sqlLink.NonSelect(nonSelectString);
+                        break;
+                    }
+                }
+            }
+
+            foreach (String proID in this.ModifiedId)
+            {
+                foreach (Products currentPro in this.productList)
+                {
+                    if (currentPro.ID == proID)
+                    {
+
+                        String nonSelectString =
+                            "update " + " PRODUCT " + "set " +
+                            "ProductName= " + "N'" + currentPro.Name + "', " +
+                            "Price= " +  currentPro.Price ;
+                        sqlLink.NonSelect(nonSelectString);
+                        break;
+                    }
+                }
+            }
+
+            foreach (String proID in this.deletedID)
+            {
+                String nonSelectString =
+                "delete " + " from " + " PRODUCT " +
+                "where " + " ProductID= " + "'" + proID + "'";
+
+                sqlLink.NonSelect(nonSelectString);
+            }
+            this.newProductID = new HashSet<String>();
+            this.deletedID = new HashSet<String>();
+            this.ModifiedId = new HashSet<String>();
+        }
+
+        public List<Products> filter(String value, String field)
+        {
+            value = value.ToLower();
+            List<Products> returnList = new List<Products>();
+
+            foreach (Products pro in this.productList)
+            {
+                switch (field)
+                {
+                    case "ID":
+                        String proID = pro.ID.ToLower();
+                        if (proID.Contains(value)) returnList.Add(pro);
+                        break;
+                    case "Name":
+                        String proName = pro.Name.ToLower();
+                        if (proName.Contains(value)) returnList.Add(pro);
+                        break;
+                    case "Price":
+                        String proPrice = pro.Price.ToString();
+                        if (proPrice.Contains(value)) returnList.Add(pro);
+                        break;
+                }
+
+            }
+
+            return returnList;
+        }
+
+
     }
 }

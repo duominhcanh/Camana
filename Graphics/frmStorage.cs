@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entities;
+using System.Data;
+using System.Data.SqlClient;
+using Entities;
 
 namespace Graphics
 {
@@ -54,6 +57,9 @@ namespace Graphics
             filterModeItemsMater = new Dictionary<String, String>();
             filterModeItemsMater.Add("Mã nguyên liệu", "Id");
             filterModeItemsMater.Add("Tên nguyên liệu", "Name");
+            filterModeItemsMater.Add("Nhà cung cấp ", "Supplier");
+            filterModeItemsMater.Add("Số lượng", "Ammount");
+
 
             filterModeItemsProd = new Dictionary<String, String>();
             filterModeItemsProd.Add("Mã sản phẩm", "Id");
@@ -64,6 +70,31 @@ namespace Graphics
             cbbFilterMode.DisplayMember = "Key";
             cbbFilterMode.ValueMember = "Value";
 
+        }
+
+        private void fillProduct()
+        {
+            if (dgvMainTable.SelectedRows.Count > 0)
+            {
+                Products current = proList.ProductList[dgvMainTable.SelectedRows[0].Index];
+
+                lblEditID.Text = current.ID;
+                txtEditName.Text = current.Name;
+                txtEditPrice.Text =current.Price.ToString();                       
+            }
+        }
+
+        private void fillEnterials()
+        {
+            if (dgvMainTable.SelectedRows.Count > 0)
+            {
+                Materials current1 = materList.MaterList[dgvMainTable.SelectedRows[0].Index];
+
+                lblEdit_ID_Mater.Text = current1.Id;
+                txtNameMarter.Text = current1.Name;
+                txtAmount_Marter.Text = current1.Ammount.ToString();
+                txtSupplier_Mar.Text = current1.Supplier;
+            }
         }
 
         private void empMoreInfoAnimation(Object tsender, EventArgs te)
@@ -128,6 +159,22 @@ namespace Graphics
             {
                 pnlAddPro.Location = new Point(pnlAddPro.Location.X - 10, 81);
             }
+        }
+
+        private void updateGridView_Product(DataGridView thisGridView, List<Products> source)
+        {
+            thisGridView.DataSource = null;
+            thisGridView.Refresh();
+            thisGridView.Update();
+            thisGridView.DataSource = source;
+        }
+
+        private void updateGridView_Materials(DataGridView thisGridView, List<Materials> source)
+        {
+            thisGridView.DataSource = null;
+            thisGridView.Refresh();
+            thisGridView.Update();
+            thisGridView.DataSource = source;
         }
 
         //=======New Material Animation================
@@ -225,7 +272,7 @@ namespace Graphics
             else if(mode == 2)
             {
                 pnlResourceInfo.BringToFront();
-                animationTimer.Tick += materNewShowAnimation;
+                animationTimer.Tick += materMoreInfoAnimation;
             }
         }
 
@@ -290,9 +337,177 @@ namespace Graphics
         {
             if (dgvMainTable.SelectedRows.Count > 0)
             {
-                Products currPro = proList.ProductList[dgvMainTable.SelectedRows[0].Index];
-                lblEditID.Text = currPro.ID;
+                if(mode == 1)
+                {
+                    Products currPro = proList.ProductList[dgvMainTable.SelectedRows[0].Index];
+                    lblEditID.Text = currPro.ID;
+                    fillProduct();
+                }
+                else if(mode == 2)
+                {
+                    Materials currPro = materList.MaterList[dgvMainTable.SelectedRows[0].Index];
+                    lblEditID.Text = currPro.Id;
+                    fillEnterials();
+                }
+            }
+        }
+
+        private void btnAddItem_Click(object sender, EventArgs e)
+        {
+            String newID = txtNewID.Text;
+            String newName = txtNewName.Text;
+            double newPrice = Double.Parse(txtNewPrice.Text);          
+            Products newPro = new Products(newID,newName,newPrice);
+
+            proList.add(newPro);
+            updateGridView_Product(dgvMainTable, proList.ProductList);
+            txtNewID.Text = txtNewName.Text = txtNewPrice.Text = "";
+            txtNewID.Focus();
+        }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            String newID = txtID.Text;
+            String newName = txtName.Text;
+            int newAmount = Int32.Parse(txtAmount.Text);
+            String newsupplier = txtSupplier.Text;          
+            Materials newMater = new Materials(newID, newName, newAmount,newsupplier);
+
+            materList.add(newMater);
+            updateGridView_Materials(dgvMainTable, materList.MaterList);
+            txtID.Text = txtName.Text = txtAmount.Text = txtSupplier.Text= "";
+            txtID.Focus();
+        }
+
+        private void btnDeleteProd_Click(object sender, EventArgs e)
+        {
+            String message = "Chắc chắn muốn xóa sản phẩm này! ?";
+            if (MessageBox.Show(message, "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                proList.remove(lblEditID.Text);
+                updateGridView_Product(dgvMainTable, proList.ProductList);
+            }
+            else { return; }
+
+            if (dgvMainTable.RowCount == 0)
+            {
+                animationTimer.Tick += empLessInfoAnimation;
+            }
+            pnlEditAction.Visible = false;
+        }
+
+        private void btnEditCancel_Click(object sender, EventArgs e)
+        {
+            fillProduct();
+            pnlEditAction.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fillEnterials();
+            pnlEditAction.Visible = false;
+        }
+
+        private void btnEditAccept_Click(object sender, EventArgs e)
+        {
+            Products currentpro = proList.find(lblEditID.Text);
+            currentpro.Name = txtEditName.Text;
+            currentpro.Price = Double.Parse(txtEditPrice.Text);          
+            updateGridView_Product(dgvMainTable, proList.ProductList);
+            pnlEditAction.Visible = false;
+        }
+
+        private void btnEditAccept_Materials_Click(object sender, EventArgs e)
+        {
+            Materials currentmater = materList.find(lblEdit_ID_Mater.Text);
+            currentmater.Name = txtNameMarter.Text;
+            currentmater.Ammount = Double.Parse(txtAmount_Marter.Text);
+            currentmater.Supplier = txtSupplier.Text;
+            updateGridView_Materials(dgvMainTable, materList.MaterList);
+            pnlEditAction.Visible = false;
+        }
+
+        private void btnEditPrevProd_Click(object sender, EventArgs e)
+        {
+            if (dgvMainTable.SelectedRows[0].Index == dgvMainTable.RowCount - 1)
+            {
+                dgvMainTable.Rows[0].Selected = true;
+
+            }
+            else
+            {
+                dgvMainTable.Rows[dgvMainTable.SelectedRows[0].Index - 1].Selected = true;
+            }
+            txtName.Focus();
+            pnlEditAction.Visible = false;
+        }
+
+        private void btnEditNextProd_Click(object sender, EventArgs e)
+        {
+            if (dgvMainTable.SelectedRows[0].Index == dgvMainTable.RowCount - 1)
+            {
+                dgvMainTable.Rows[0].Selected = true;
+
+            }
+            else
+            {
+                dgvMainTable.Rows[dgvMainTable.SelectedRows[0].Index + 1].Selected = true;
+            }
+            txtName.Focus();
+            pnlEditAction.Visible = false;
+        }
+
+        private void btnEditPrevMater_Click(object sender, EventArgs e)
+        {
+            if (dgvMainTable.SelectedRows[0].Index == dgvMainTable.RowCount - 1)
+            {
+                dgvMainTable.Rows[0].Selected = true;
+
+            }
+            else
+            {
+                dgvMainTable.Rows[dgvMainTable.SelectedRows[0].Index - 1].Selected = true;
+            }
+            txtName.Focus();
+            pnlEditAction.Visible = false;
+        }
+
+        private void btnEditNextMater_Click(object sender, EventArgs e)
+        {
+            if (dgvMainTable.SelectedRows[0].Index == dgvMainTable.RowCount - 1)
+            {
+                dgvMainTable.Rows[0].Selected = true;
+
+            }
+            else
+            {
+                dgvMainTable.Rows[dgvMainTable.SelectedRows[0].Index + 1].Selected = true;
+            }
+            txtName.Focus();
+            pnlEditAction.Visible = false;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if(mode == 1)
+            {
+                proList.saveChanges();
+                MessageBox.Show("Đã lưu thay đổi vào csdl");
+            }
+
+            // cho xet mode 2
+        }
+
+        private void txtFilter_TextChanged(object sender, EventArgs e)
+        {
+            if(mode == 1)
+            {
+                updateGridView_Product(dgvMainTable, proList.filter(txtFilter.Text, cbbFilterMode.SelectedValue.ToString()));
+            }
+            else if(mode == 2)
+            {
+                updateGridView_Materials(dgvMainTable, materList.filter(txtFilter.Text, cbbFilterMode.SelectedValue.ToString()));
             }
         }
     }
+
 }

@@ -31,6 +31,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlLeft = new System.Windows.Forms.Panel();
+            this.btnMoreInfo = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.lblMoreInfo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,6 +48,7 @@
             this.cbbFilterMode = new System.Windows.Forms.ComboBox();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
             this.dgvEmployeesTable = new System.Windows.Forms.DataGridView();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,6 +56,10 @@
             this.lblEmpID = new System.Windows.Forms.Label();
             this.pnlLeftInfo = new System.Windows.Forms.Panel();
             this.pnlEditAction = new System.Windows.Forms.Panel();
+            this.btnEditCancel = new System.Windows.Forms.Button();
+            this.btnEditAccept = new System.Windows.Forms.Button();
+            this.btnLeft = new System.Windows.Forms.Button();
+            this.btnempMoreInfoClose = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -60,6 +68,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtEmpPhone = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.btnRight = new System.Windows.Forms.Button();
             this.txtEmpRole = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -76,6 +85,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlAddEmp = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnAddEmpClose = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -101,16 +111,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtNewEmpName = new System.Windows.Forms.TextBox();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.btnAddEmpClose = new System.Windows.Forms.Button();
-            this.btnEditCancel = new System.Windows.Forms.Button();
-            this.btnEditAccept = new System.Windows.Forms.Button();
-            this.btnLeft = new System.Windows.Forms.Button();
-            this.btnempMoreInfoClose = new System.Windows.Forms.Button();
-            this.btnRight = new System.Windows.Forms.Button();
-            this.btnMoreInfo = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnReload = new System.Windows.Forms.Button();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeesTable)).BeginInit();
             this.pnlTop.SuspendLayout();
@@ -144,6 +144,45 @@
             this.pnlLeft.Name = "pnlLeft";
             this.pnlLeft.Size = new System.Drawing.Size(254, 560);
             this.pnlLeft.TabIndex = 1;
+            // 
+            // btnMoreInfo
+            // 
+            this.btnMoreInfo.BackgroundImage = global::Graphics.Properties.Resources.three_dots;
+            this.btnMoreInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMoreInfo.FlatAppearance.BorderSize = 0;
+            this.btnMoreInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMoreInfo.Location = new System.Drawing.Point(16, 155);
+            this.btnMoreInfo.Name = "btnMoreInfo";
+            this.btnMoreInfo.Size = new System.Drawing.Size(50, 50);
+            this.btnMoreInfo.TabIndex = 5;
+            this.btnMoreInfo.UseVisualStyleBackColor = true;
+            this.btnMoreInfo.Click += new System.EventHandler(this.btnMoreInfo_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackgroundImage = global::Graphics.Properties.Resources.database;
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Location = new System.Drawing.Point(180, 78);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(50, 50);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackgroundImage = global::Graphics.Properties.Resources.user;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Location = new System.Drawing.Point(21, 78);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(50, 50);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblMoreInfo
             // 
@@ -290,6 +329,19 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.txtFilter_TextChanged);
             // 
+            // btnReload
+            // 
+            this.btnReload.BackgroundImage = global::Graphics.Properties.Resources.refresh;
+            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReload.FlatAppearance.BorderSize = 0;
+            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReload.Location = new System.Drawing.Point(103, 78);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(50, 50);
+            this.btnReload.TabIndex = 5;
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
             // dgvEmployeesTable
             // 
             this.dgvEmployeesTable.AllowUserToDeleteRows = false;
@@ -409,6 +461,58 @@
             this.pnlEditAction.Size = new System.Drawing.Size(87, 38);
             this.pnlEditAction.TabIndex = 21;
             // 
+            // btnEditCancel
+            // 
+            this.btnEditCancel.BackgroundImage = global::Graphics.Properties.Resources.refresh;
+            this.btnEditCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditCancel.FlatAppearance.BorderSize = 0;
+            this.btnEditCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCancel.Location = new System.Drawing.Point(3, 5);
+            this.btnEditCancel.Name = "btnEditCancel";
+            this.btnEditCancel.Size = new System.Drawing.Size(30, 30);
+            this.btnEditCancel.TabIndex = 20;
+            this.btnEditCancel.UseVisualStyleBackColor = true;
+            this.btnEditCancel.Click += new System.EventHandler(this.btnEditCancel_Click);
+            // 
+            // btnEditAccept
+            // 
+            this.btnEditAccept.BackgroundImage = global::Graphics.Properties.Resources.check;
+            this.btnEditAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditAccept.FlatAppearance.BorderSize = 0;
+            this.btnEditAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditAccept.Location = new System.Drawing.Point(48, 5);
+            this.btnEditAccept.Name = "btnEditAccept";
+            this.btnEditAccept.Size = new System.Drawing.Size(30, 30);
+            this.btnEditAccept.TabIndex = 20;
+            this.btnEditAccept.UseVisualStyleBackColor = true;
+            this.btnEditAccept.Click += new System.EventHandler(this.btnEditAccept_Click);
+            // 
+            // btnLeft
+            // 
+            this.btnLeft.BackgroundImage = global::Graphics.Properties.Resources.left_arrow__1_;
+            this.btnLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLeft.FlatAppearance.BorderSize = 0;
+            this.btnLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeft.Location = new System.Drawing.Point(3, 13);
+            this.btnLeft.Name = "btnLeft";
+            this.btnLeft.Size = new System.Drawing.Size(30, 30);
+            this.btnLeft.TabIndex = 18;
+            this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
+            // 
+            // btnempMoreInfoClose
+            // 
+            this.btnempMoreInfoClose.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnempMoreInfoClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnempMoreInfoClose.FlatAppearance.BorderSize = 0;
+            this.btnempMoreInfoClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnempMoreInfoClose.Location = new System.Drawing.Point(109, 12);
+            this.btnempMoreInfoClose.Name = "btnempMoreInfoClose";
+            this.btnempMoreInfoClose.Size = new System.Drawing.Size(30, 30);
+            this.btnempMoreInfoClose.TabIndex = 20;
+            this.btnempMoreInfoClose.UseVisualStyleBackColor = true;
+            this.btnempMoreInfoClose.Click += new System.EventHandler(this.btnempMoreInfoClose_Click);
+            // 
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -476,6 +580,7 @@
             this.txtEmpPhone.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmpPhone.Location = new System.Drawing.Point(10, 244);
+            this.txtEmpPhone.MaxLength = 10;
             this.txtEmpPhone.Name = "txtEmpPhone";
             this.txtEmpPhone.Size = new System.Drawing.Size(234, 22);
             this.txtEmpPhone.TabIndex = 12;
@@ -490,6 +595,19 @@
             this.label13.Size = new System.Drawing.Size(234, 21);
             this.label13.TabIndex = 4;
             this.label13.Text = "Giới tính";
+            // 
+            // btnRight
+            // 
+            this.btnRight.BackgroundImage = global::Graphics.Properties.Resources.right_arrow__1_;
+            this.btnRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRight.FlatAppearance.BorderSize = 0;
+            this.btnRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRight.Location = new System.Drawing.Point(220, 13);
+            this.btnRight.Name = "btnRight";
+            this.btnRight.Size = new System.Drawing.Size(30, 30);
+            this.btnRight.TabIndex = 17;
+            this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
             // txtEmpRole
             // 
@@ -680,6 +798,19 @@
             this.panel10.Size = new System.Drawing.Size(253, 10);
             this.panel10.TabIndex = 3;
             // 
+            // btnAddEmpClose
+            // 
+            this.btnAddEmpClose.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnAddEmpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddEmpClose.FlatAppearance.BorderSize = 0;
+            this.btnAddEmpClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEmpClose.Location = new System.Drawing.Point(109, 12);
+            this.btnAddEmpClose.Name = "btnAddEmpClose";
+            this.btnAddEmpClose.Size = new System.Drawing.Size(30, 30);
+            this.btnAddEmpClose.TabIndex = 20;
+            this.btnAddEmpClose.UseVisualStyleBackColor = true;
+            this.btnAddEmpClose.Click += new System.EventHandler(this.btnAddEmpClose_Click);
+            // 
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -757,6 +888,7 @@
             this.txtNewEmpPhone.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewEmpPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNewEmpPhone.Location = new System.Drawing.Point(10, 244);
+            this.txtNewEmpPhone.MaxLength = 10;
             this.txtNewEmpPhone.Name = "txtNewEmpPhone";
             this.txtNewEmpPhone.Size = new System.Drawing.Size(234, 22);
             this.txtNewEmpPhone.TabIndex = 12;
@@ -929,136 +1061,6 @@
             this.panel17.Size = new System.Drawing.Size(234, 1);
             this.panel17.TabIndex = 3;
             // 
-            // btnAddEmpClose
-            // 
-            this.btnAddEmpClose.BackgroundImage = global::Graphics.Properties.Resources.close;
-            this.btnAddEmpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddEmpClose.FlatAppearance.BorderSize = 0;
-            this.btnAddEmpClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddEmpClose.Location = new System.Drawing.Point(109, 12);
-            this.btnAddEmpClose.Name = "btnAddEmpClose";
-            this.btnAddEmpClose.Size = new System.Drawing.Size(30, 30);
-            this.btnAddEmpClose.TabIndex = 20;
-            this.btnAddEmpClose.UseVisualStyleBackColor = true;
-            this.btnAddEmpClose.Click += new System.EventHandler(this.btnAddEmpClose_Click);
-            // 
-            // btnEditCancel
-            // 
-            this.btnEditCancel.BackgroundImage = global::Graphics.Properties.Resources.refresh;
-            this.btnEditCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditCancel.FlatAppearance.BorderSize = 0;
-            this.btnEditCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCancel.Location = new System.Drawing.Point(3, 5);
-            this.btnEditCancel.Name = "btnEditCancel";
-            this.btnEditCancel.Size = new System.Drawing.Size(30, 30);
-            this.btnEditCancel.TabIndex = 20;
-            this.btnEditCancel.UseVisualStyleBackColor = true;
-            this.btnEditCancel.Click += new System.EventHandler(this.btnEditCancel_Click);
-            // 
-            // btnEditAccept
-            // 
-            this.btnEditAccept.BackgroundImage = global::Graphics.Properties.Resources.check;
-            this.btnEditAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditAccept.FlatAppearance.BorderSize = 0;
-            this.btnEditAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditAccept.Location = new System.Drawing.Point(48, 5);
-            this.btnEditAccept.Name = "btnEditAccept";
-            this.btnEditAccept.Size = new System.Drawing.Size(30, 30);
-            this.btnEditAccept.TabIndex = 20;
-            this.btnEditAccept.UseVisualStyleBackColor = true;
-            this.btnEditAccept.Click += new System.EventHandler(this.btnEditAccept_Click);
-            // 
-            // btnLeft
-            // 
-            this.btnLeft.BackgroundImage = global::Graphics.Properties.Resources.left_arrow__1_;
-            this.btnLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLeft.FlatAppearance.BorderSize = 0;
-            this.btnLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLeft.Location = new System.Drawing.Point(3, 13);
-            this.btnLeft.Name = "btnLeft";
-            this.btnLeft.Size = new System.Drawing.Size(30, 30);
-            this.btnLeft.TabIndex = 18;
-            this.btnLeft.UseVisualStyleBackColor = true;
-            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
-            // 
-            // btnempMoreInfoClose
-            // 
-            this.btnempMoreInfoClose.BackgroundImage = global::Graphics.Properties.Resources.close;
-            this.btnempMoreInfoClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnempMoreInfoClose.FlatAppearance.BorderSize = 0;
-            this.btnempMoreInfoClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnempMoreInfoClose.Location = new System.Drawing.Point(109, 12);
-            this.btnempMoreInfoClose.Name = "btnempMoreInfoClose";
-            this.btnempMoreInfoClose.Size = new System.Drawing.Size(30, 30);
-            this.btnempMoreInfoClose.TabIndex = 20;
-            this.btnempMoreInfoClose.UseVisualStyleBackColor = true;
-            this.btnempMoreInfoClose.Click += new System.EventHandler(this.btnempMoreInfoClose_Click);
-            // 
-            // btnRight
-            // 
-            this.btnRight.BackgroundImage = global::Graphics.Properties.Resources.right_arrow__1_;
-            this.btnRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRight.FlatAppearance.BorderSize = 0;
-            this.btnRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRight.Location = new System.Drawing.Point(220, 13);
-            this.btnRight.Name = "btnRight";
-            this.btnRight.Size = new System.Drawing.Size(30, 30);
-            this.btnRight.TabIndex = 17;
-            this.btnRight.UseVisualStyleBackColor = true;
-            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
-            // 
-            // btnMoreInfo
-            // 
-            this.btnMoreInfo.BackgroundImage = global::Graphics.Properties.Resources.three_dots;
-            this.btnMoreInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMoreInfo.FlatAppearance.BorderSize = 0;
-            this.btnMoreInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMoreInfo.Location = new System.Drawing.Point(16, 155);
-            this.btnMoreInfo.Name = "btnMoreInfo";
-            this.btnMoreInfo.Size = new System.Drawing.Size(50, 50);
-            this.btnMoreInfo.TabIndex = 5;
-            this.btnMoreInfo.UseVisualStyleBackColor = true;
-            this.btnMoreInfo.Click += new System.EventHandler(this.btnMoreInfo_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackgroundImage = global::Graphics.Properties.Resources.database;
-            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(180, 78);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(50, 50);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackgroundImage = global::Graphics.Properties.Resources.user;
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(21, 78);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(50, 50);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnReload
-            // 
-            this.btnReload.BackgroundImage = global::Graphics.Properties.Resources.refresh;
-            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReload.FlatAppearance.BorderSize = 0;
-            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReload.Location = new System.Drawing.Point(103, 78);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(50, 50);
-            this.btnReload.TabIndex = 5;
-            this.btnReload.UseVisualStyleBackColor = true;
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
-            // 
             // frmEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1068,8 +1070,8 @@
             this.Controls.Add(this.pnlAddEmp);
             this.Controls.Add(this.pnlLeftInfo);
             this.Controls.Add(this.pnlTop);
-            this.Controls.Add(this.dgvEmployeesTable);
             this.Controls.Add(this.pnlLeft);
+            this.Controls.Add(this.dgvEmployeesTable);
             this.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmEmployees";

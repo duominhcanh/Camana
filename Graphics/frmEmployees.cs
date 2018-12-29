@@ -295,7 +295,8 @@ namespace Graphics
             empList.add(newEmp);
             updateGridView(dgvEmployeesTable, empList.EmpList);
             txtNewEmpID.Text = txtNewEmpName.Text = txtNewEmpRole.Text = txtNewEmpBirth.Text =
-                txtNewEmpDayIn.Text = txtNewEmpAddress.Text = "";
+                txtNewEmpDayIn.Text = txtNewEmpAddress.Text =txtNewEmpPhone.Text="";
+            txtNewEmpID.Focus();
         }
 
         private void btnDeleteEmp_Click(object sender, EventArgs e)
@@ -367,5 +368,7 @@ namespace Graphics
         {
             updateGridView(dgvEmployeesTable, empList.filter(txtFilter.Text, cbbFilterMode.SelectedValue.ToString()));
         }
+
+        
     }
 }

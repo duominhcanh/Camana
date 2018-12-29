@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pnlEditAction = new System.Windows.Forms.Panel();
+            this.btnEditCancel = new System.Windows.Forms.Button();
+            this.btnEditAccept = new System.Windows.Forms.Button();
             this.lblEditID = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
@@ -39,6 +41,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtEditPrice = new System.Windows.Forms.TextBox();
             this.pnlAddPro = new System.Windows.Forms.Panel();
+            this.btnAddEmpClose = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.txtNewPrice = new System.Windows.Forms.TextBox();
@@ -63,14 +66,23 @@
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.btnFilter = new System.Windows.Forms.Button();
             this.pnlLeft = new System.Windows.Forms.Panel();
+            this.btnMoreInfo = new System.Windows.Forms.Button();
+            this.btnMode1 = new System.Windows.Forms.Button();
+            this.btnMode2 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.btnReload = new System.Windows.Forms.Button();
             this.btnDeleteProd = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtEditName = new System.Windows.Forms.TextBox();
             this.pnlLeftInfo = new System.Windows.Forms.Panel();
             this.lbxResource = new System.Windows.Forms.ListBox();
+            this.btnEditPrevProd = new System.Windows.Forms.Button();
+            this.btnEditCloseProd = new System.Windows.Forms.Button();
+            this.btnEditNextProd = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvMainTable = new System.Windows.Forms.DataGridView();
@@ -79,49 +91,39 @@
             this.pnlResourceInfo = new System.Windows.Forms.Panel();
             this.lbxHistory = new System.Windows.Forms.ListBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.btnEditReturn = new System.Windows.Forms.Button();
+            this.btnEditAccept_Materials = new System.Windows.Forms.Button();
+            this.lblEdit_ID_Mater = new System.Windows.Forms.Label();
+            this.btnEditPrevMater = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnEditCloseMater = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnEditNextMater = new System.Windows.Forms.Button();
+            this.txtSupplier_Mar = new System.Windows.Forms.TextBox();
+            this.txtAmount_Marter = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNameMarter = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.pnlNewResource = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.btnMaterNewClose = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSupplier = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAmount = new System.Windows.Forms.TextBox();
             this.panel21 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnEditPrevMater = new System.Windows.Forms.Button();
-            this.btnEditCloseMater = new System.Windows.Forms.Button();
-            this.btnEditNextMater = new System.Windows.Forms.Button();
-            this.btnMaterNewClose = new System.Windows.Forms.Button();
-            this.btnAddEmpClose = new System.Windows.Forms.Button();
-            this.btnMoreInfo = new System.Windows.Forms.Button();
-            this.btnMode1 = new System.Windows.Forms.Button();
-            this.btnMode2 = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnReload = new System.Windows.Forms.Button();
-            this.btnEditCancel = new System.Windows.Forms.Button();
-            this.btnEditAccept = new System.Windows.Forms.Button();
-            this.btnEditPrevProd = new System.Windows.Forms.Button();
-            this.btnEditCloseProd = new System.Windows.Forms.Button();
-            this.btnEditNextProd = new System.Windows.Forms.Button();
             this.pnlEditAction.SuspendLayout();
             this.pnlAddPro.SuspendLayout();
             this.pnlLeft.SuspendLayout();
@@ -149,6 +151,32 @@
             this.pnlEditAction.Name = "pnlEditAction";
             this.pnlEditAction.Size = new System.Drawing.Size(87, 38);
             this.pnlEditAction.TabIndex = 21;
+            // 
+            // btnEditCancel
+            // 
+            this.btnEditCancel.BackgroundImage = global::Graphics.Properties.Resources.refresh;
+            this.btnEditCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditCancel.FlatAppearance.BorderSize = 0;
+            this.btnEditCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCancel.Location = new System.Drawing.Point(3, 5);
+            this.btnEditCancel.Name = "btnEditCancel";
+            this.btnEditCancel.Size = new System.Drawing.Size(30, 30);
+            this.btnEditCancel.TabIndex = 20;
+            this.btnEditCancel.UseVisualStyleBackColor = true;
+            this.btnEditCancel.Click += new System.EventHandler(this.btnEditCancel_Click);
+            // 
+            // btnEditAccept
+            // 
+            this.btnEditAccept.BackgroundImage = global::Graphics.Properties.Resources.check;
+            this.btnEditAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditAccept.FlatAppearance.BorderSize = 0;
+            this.btnEditAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditAccept.Location = new System.Drawing.Point(48, 5);
+            this.btnEditAccept.Name = "btnEditAccept";
+            this.btnEditAccept.Size = new System.Drawing.Size(30, 30);
+            this.btnEditAccept.TabIndex = 20;
+            this.btnEditAccept.UseVisualStyleBackColor = true;
+            this.btnEditAccept.Click += new System.EventHandler(this.btnEditAccept_Click);
             // 
             // lblEditID
             // 
@@ -231,6 +259,19 @@
             this.pnlAddPro.Size = new System.Drawing.Size(254, 560);
             this.pnlAddPro.TabIndex = 10;
             // 
+            // btnAddEmpClose
+            // 
+            this.btnAddEmpClose.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnAddEmpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddEmpClose.FlatAppearance.BorderSize = 0;
+            this.btnAddEmpClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddEmpClose.Location = new System.Drawing.Point(109, 12);
+            this.btnAddEmpClose.Name = "btnAddEmpClose";
+            this.btnAddEmpClose.Size = new System.Drawing.Size(30, 30);
+            this.btnAddEmpClose.TabIndex = 20;
+            this.btnAddEmpClose.UseVisualStyleBackColor = true;
+            this.btnAddEmpClose.Click += new System.EventHandler(this.btnAddEmpClose_Click);
+            // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,6 +315,7 @@
             this.btnAddItem.TabIndex = 0;
             this.btnAddItem.Text = "Thêm";
             this.btnAddItem.UseVisualStyleBackColor = false;
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // panel13
             // 
@@ -450,6 +492,7 @@
             this.txtFilter.Name = "txtFilter";
             this.txtFilter.Size = new System.Drawing.Size(234, 22);
             this.txtFilter.TabIndex = 1;
+            this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
             // 
             // btnFilter
             // 
@@ -495,6 +538,72 @@
             this.pnlLeft.Size = new System.Drawing.Size(254, 560);
             this.pnlLeft.TabIndex = 7;
             // 
+            // btnMoreInfo
+            // 
+            this.btnMoreInfo.BackgroundImage = global::Graphics.Properties.Resources.three_dots;
+            this.btnMoreInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMoreInfo.FlatAppearance.BorderSize = 0;
+            this.btnMoreInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMoreInfo.Location = new System.Drawing.Point(16, 230);
+            this.btnMoreInfo.Name = "btnMoreInfo";
+            this.btnMoreInfo.Size = new System.Drawing.Size(50, 50);
+            this.btnMoreInfo.TabIndex = 5;
+            this.btnMoreInfo.UseVisualStyleBackColor = true;
+            this.btnMoreInfo.Click += new System.EventHandler(this.btnMoreInfo_Click);
+            // 
+            // btnMode1
+            // 
+            this.btnMode1.BackgroundImage = global::Graphics.Properties.Resources.coffee_pot;
+            this.btnMode1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMode1.FlatAppearance.BorderSize = 0;
+            this.btnMode1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMode1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMode1.Location = new System.Drawing.Point(53, 7);
+            this.btnMode1.Name = "btnMode1";
+            this.btnMode1.Size = new System.Drawing.Size(50, 50);
+            this.btnMode1.TabIndex = 5;
+            this.btnMode1.UseVisualStyleBackColor = true;
+            this.btnMode1.Click += new System.EventHandler(this.btnMode1_Click);
+            // 
+            // btnMode2
+            // 
+            this.btnMode2.BackgroundImage = global::Graphics.Properties.Resources.coffees;
+            this.btnMode2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMode2.FlatAppearance.BorderSize = 0;
+            this.btnMode2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMode2.Location = new System.Drawing.Point(135, 7);
+            this.btnMode2.Name = "btnMode2";
+            this.btnMode2.Size = new System.Drawing.Size(50, 50);
+            this.btnMode2.TabIndex = 5;
+            this.btnMode2.UseVisualStyleBackColor = true;
+            this.btnMode2.Click += new System.EventHandler(this.btnMode2_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackgroundImage = global::Graphics.Properties.Resources.database;
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Location = new System.Drawing.Point(180, 153);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(50, 50);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackgroundImage = global::Graphics.Properties.Resources.plus;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Location = new System.Drawing.Point(21, 153);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(50, 50);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // label25
             // 
             this.label25.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -525,6 +634,19 @@
             this.panel18.Size = new System.Drawing.Size(253, 10);
             this.panel18.TabIndex = 3;
             // 
+            // btnReload
+            // 
+            this.btnReload.BackgroundImage = global::Graphics.Properties.Resources.refresh;
+            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReload.FlatAppearance.BorderSize = 0;
+            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReload.Location = new System.Drawing.Point(103, 153);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(50, 50);
+            this.btnReload.TabIndex = 5;
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
             // btnDeleteProd
             // 
             this.btnDeleteProd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(77)))), ((int)(((byte)(75)))));
@@ -537,6 +659,7 @@
             this.btnDeleteProd.TabIndex = 19;
             this.btnDeleteProd.Text = "Xóa Sản Phẩm này";
             this.btnDeleteProd.UseVisualStyleBackColor = false;
+            this.btnDeleteProd.Click += new System.EventHandler(this.btnDeleteProd_Click);
             // 
             // panel4
             // 
@@ -593,6 +716,45 @@
             this.lbxResource.Size = new System.Drawing.Size(234, 189);
             this.lbxResource.TabIndex = 22;
             // 
+            // btnEditPrevProd
+            // 
+            this.btnEditPrevProd.BackgroundImage = global::Graphics.Properties.Resources.left_arrow__1_;
+            this.btnEditPrevProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditPrevProd.FlatAppearance.BorderSize = 0;
+            this.btnEditPrevProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditPrevProd.Location = new System.Drawing.Point(3, 13);
+            this.btnEditPrevProd.Name = "btnEditPrevProd";
+            this.btnEditPrevProd.Size = new System.Drawing.Size(30, 30);
+            this.btnEditPrevProd.TabIndex = 18;
+            this.btnEditPrevProd.UseVisualStyleBackColor = true;
+            this.btnEditPrevProd.Click += new System.EventHandler(this.btnEditPrevProd_Click);
+            // 
+            // btnEditCloseProd
+            // 
+            this.btnEditCloseProd.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnEditCloseProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditCloseProd.FlatAppearance.BorderSize = 0;
+            this.btnEditCloseProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCloseProd.Location = new System.Drawing.Point(109, 12);
+            this.btnEditCloseProd.Name = "btnEditCloseProd";
+            this.btnEditCloseProd.Size = new System.Drawing.Size(30, 30);
+            this.btnEditCloseProd.TabIndex = 20;
+            this.btnEditCloseProd.UseVisualStyleBackColor = true;
+            this.btnEditCloseProd.Click += new System.EventHandler(this.btnEditClose_Click);
+            // 
+            // btnEditNextProd
+            // 
+            this.btnEditNextProd.BackgroundImage = global::Graphics.Properties.Resources.right_arrow__1_;
+            this.btnEditNextProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditNextProd.FlatAppearance.BorderSize = 0;
+            this.btnEditNextProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditNextProd.Location = new System.Drawing.Point(220, 13);
+            this.btnEditNextProd.Name = "btnEditNextProd";
+            this.btnEditNextProd.Size = new System.Drawing.Size(30, 30);
+            this.btnEditNextProd.TabIndex = 17;
+            this.btnEditNextProd.UseVisualStyleBackColor = true;
+            this.btnEditNextProd.Click += new System.EventHandler(this.btnEditNextProd_Click);
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
@@ -622,22 +784,22 @@
             this.dgvMainTable.Name = "dgvMainTable";
             this.dgvMainTable.ReadOnly = true;
             this.dgvMainTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(237)))), ((int)(((byte)(159)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMainTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(237)))), ((int)(((byte)(159)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMainTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvMainTable.RowHeadersWidth = 30;
             this.dgvMainTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(224)))), ((int)(((byte)(143)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
-            this.dgvMainTable.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(224)))), ((int)(((byte)(143)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
+            this.dgvMainTable.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvMainTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMainTable.Size = new System.Drawing.Size(889, 560);
             this.dgvMainTable.TabIndex = 8;
@@ -668,17 +830,19 @@
             this.pnlResourceInfo.BackColor = System.Drawing.Color.White;
             this.pnlResourceInfo.Controls.Add(this.lbxHistory);
             this.pnlResourceInfo.Controls.Add(this.panel7);
-            this.pnlResourceInfo.Controls.Add(this.label6);
+            this.pnlResourceInfo.Controls.Add(this.lblEdit_ID_Mater);
             this.pnlResourceInfo.Controls.Add(this.btnEditPrevMater);
             this.pnlResourceInfo.Controls.Add(this.panel8);
             this.pnlResourceInfo.Controls.Add(this.btnEditCloseMater);
             this.pnlResourceInfo.Controls.Add(this.label17);
+            this.pnlResourceInfo.Controls.Add(this.label20);
             this.pnlResourceInfo.Controls.Add(this.label12);
             this.pnlResourceInfo.Controls.Add(this.label13);
             this.pnlResourceInfo.Controls.Add(this.btnEditNextMater);
-            this.pnlResourceInfo.Controls.Add(this.textBox1);
+            this.pnlResourceInfo.Controls.Add(this.txtSupplier_Mar);
+            this.pnlResourceInfo.Controls.Add(this.txtAmount_Marter);
             this.pnlResourceInfo.Controls.Add(this.panel9);
-            this.pnlResourceInfo.Controls.Add(this.textBox2);
+            this.pnlResourceInfo.Controls.Add(this.txtNameMarter);
             this.pnlResourceInfo.Controls.Add(this.panel11);
             this.pnlResourceInfo.Controls.Add(this.panel12);
             this.pnlResourceInfo.Location = new System.Drawing.Point(635, 80);
@@ -694,31 +858,70 @@
             this.lbxHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbxHistory.FormattingEnabled = true;
             this.lbxHistory.ItemHeight = 21;
-            this.lbxHistory.Location = new System.Drawing.Point(10, 254);
+            this.lbxHistory.Location = new System.Drawing.Point(10, 300);
             this.lbxHistory.Name = "lbxHistory";
             this.lbxHistory.Size = new System.Drawing.Size(234, 189);
             this.lbxHistory.TabIndex = 22;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.button1);
-            this.panel7.Controls.Add(this.button2);
+            this.panel7.Controls.Add(this.btnEditReturn);
+            this.panel7.Controls.Add(this.btnEditAccept_Materials);
             this.panel7.Location = new System.Drawing.Point(158, 80);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(87, 38);
             this.panel7.TabIndex = 21;
             // 
-            // label6
+            // btnEditReturn
             // 
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(8, 80);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 38);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "ID";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditReturn.BackgroundImage = global::Graphics.Properties.Resources.refresh;
+            this.btnEditReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditReturn.FlatAppearance.BorderSize = 0;
+            this.btnEditReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditReturn.Location = new System.Drawing.Point(3, 5);
+            this.btnEditReturn.Name = "btnEditReturn";
+            this.btnEditReturn.Size = new System.Drawing.Size(30, 30);
+            this.btnEditReturn.TabIndex = 20;
+            this.btnEditReturn.UseVisualStyleBackColor = true;
+            this.btnEditReturn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnEditAccept_Materials
+            // 
+            this.btnEditAccept_Materials.BackgroundImage = global::Graphics.Properties.Resources.check;
+            this.btnEditAccept_Materials.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditAccept_Materials.FlatAppearance.BorderSize = 0;
+            this.btnEditAccept_Materials.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditAccept_Materials.Location = new System.Drawing.Point(48, 5);
+            this.btnEditAccept_Materials.Name = "btnEditAccept_Materials";
+            this.btnEditAccept_Materials.Size = new System.Drawing.Size(30, 30);
+            this.btnEditAccept_Materials.TabIndex = 20;
+            this.btnEditAccept_Materials.UseVisualStyleBackColor = true;
+            this.btnEditAccept_Materials.Click += new System.EventHandler(this.btnEditAccept_Materials_Click);
+            // 
+            // lblEdit_ID_Mater
+            // 
+            this.lblEdit_ID_Mater.BackColor = System.Drawing.Color.White;
+            this.lblEdit_ID_Mater.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdit_ID_Mater.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblEdit_ID_Mater.Location = new System.Drawing.Point(8, 80);
+            this.lblEdit_ID_Mater.Name = "lblEdit_ID_Mater";
+            this.lblEdit_ID_Mater.Size = new System.Drawing.Size(144, 38);
+            this.lblEdit_ID_Mater.TabIndex = 4;
+            this.lblEdit_ID_Mater.Text = "ID";
+            this.lblEdit_ID_Mater.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnEditPrevMater
+            // 
+            this.btnEditPrevMater.BackgroundImage = global::Graphics.Properties.Resources.left_arrow__1_;
+            this.btnEditPrevMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditPrevMater.FlatAppearance.BorderSize = 0;
+            this.btnEditPrevMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditPrevMater.Location = new System.Drawing.Point(3, 13);
+            this.btnEditPrevMater.Name = "btnEditPrevMater";
+            this.btnEditPrevMater.Size = new System.Drawing.Size(30, 30);
+            this.btnEditPrevMater.TabIndex = 18;
+            this.btnEditPrevMater.UseVisualStyleBackColor = true;
+            this.btnEditPrevMater.Click += new System.EventHandler(this.btnEditPrevMater_Click);
             // 
             // panel8
             // 
@@ -728,15 +931,38 @@
             this.panel8.Size = new System.Drawing.Size(253, 10);
             this.panel8.TabIndex = 3;
             // 
+            // btnEditCloseMater
+            // 
+            this.btnEditCloseMater.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnEditCloseMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditCloseMater.FlatAppearance.BorderSize = 0;
+            this.btnEditCloseMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditCloseMater.Location = new System.Drawing.Point(109, 12);
+            this.btnEditCloseMater.Name = "btnEditCloseMater";
+            this.btnEditCloseMater.Size = new System.Drawing.Size(30, 30);
+            this.btnEditCloseMater.TabIndex = 20;
+            this.btnEditCloseMater.UseVisualStyleBackColor = true;
+            this.btnEditCloseMater.Click += new System.EventHandler(this.btnMaterInfoClose_Click);
+            // 
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label17.Location = new System.Drawing.Point(11, 230);
+            this.label17.Location = new System.Drawing.Point(10, 274);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(234, 21);
             this.label17.TabIndex = 4;
             this.label17.Text = "Lịch sử nhập";
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label20.Location = new System.Drawing.Point(10, 227);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(234, 21);
+            this.label20.TabIndex = 4;
+            this.label20.Text = "Nhà cung cấp ";
             // 
             // label12
             // 
@@ -758,16 +984,40 @@
             this.label13.TabIndex = 4;
             this.label13.Text = "Tên";
             // 
-            // textBox1
+            // btnEditNextMater
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.Location = new System.Drawing.Point(10, 196);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 22);
-            this.textBox1.TabIndex = 11;
+            this.btnEditNextMater.BackgroundImage = global::Graphics.Properties.Resources.right_arrow__1_;
+            this.btnEditNextMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditNextMater.FlatAppearance.BorderSize = 0;
+            this.btnEditNextMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditNextMater.Location = new System.Drawing.Point(220, 13);
+            this.btnEditNextMater.Name = "btnEditNextMater";
+            this.btnEditNextMater.Size = new System.Drawing.Size(30, 30);
+            this.btnEditNextMater.TabIndex = 17;
+            this.btnEditNextMater.UseVisualStyleBackColor = true;
+            this.btnEditNextMater.Click += new System.EventHandler(this.btnEditNextMater_Click);
+            // 
+            // txtSupplier_Mar
+            // 
+            this.txtSupplier_Mar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.txtSupplier_Mar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSupplier_Mar.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplier_Mar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSupplier_Mar.Location = new System.Drawing.Point(10, 249);
+            this.txtSupplier_Mar.Name = "txtSupplier_Mar";
+            this.txtSupplier_Mar.Size = new System.Drawing.Size(234, 22);
+            this.txtSupplier_Mar.TabIndex = 11;
+            // 
+            // txtAmount_Marter
+            // 
+            this.txtAmount_Marter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.txtAmount_Marter.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAmount_Marter.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount_Marter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAmount_Marter.Location = new System.Drawing.Point(10, 196);
+            this.txtAmount_Marter.Name = "txtAmount_Marter";
+            this.txtAmount_Marter.Size = new System.Drawing.Size(234, 22);
+            this.txtAmount_Marter.TabIndex = 11;
             // 
             // panel9
             // 
@@ -777,16 +1027,16 @@
             this.panel9.Size = new System.Drawing.Size(234, 1);
             this.panel9.TabIndex = 3;
             // 
-            // textBox2
+            // txtNameMarter
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox2.Location = new System.Drawing.Point(10, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 22);
-            this.textBox2.TabIndex = 10;
+            this.txtNameMarter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.txtNameMarter.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNameMarter.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameMarter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNameMarter.Location = new System.Drawing.Point(10, 148);
+            this.txtNameMarter.Name = "txtNameMarter";
+            this.txtNameMarter.Size = new System.Drawing.Size(234, 22);
+            this.txtNameMarter.TabIndex = 10;
             // 
             // panel11
             // 
@@ -812,15 +1062,15 @@
             this.pnlNewResource.Controls.Add(this.label19);
             this.pnlNewResource.Controls.Add(this.label14);
             this.pnlNewResource.Controls.Add(this.label15);
-            this.pnlNewResource.Controls.Add(this.textBox6);
+            this.pnlNewResource.Controls.Add(this.txtSupplier);
             this.pnlNewResource.Controls.Add(this.label16);
-            this.pnlNewResource.Controls.Add(this.textBox3);
+            this.pnlNewResource.Controls.Add(this.txtAmount);
             this.pnlNewResource.Controls.Add(this.panel21);
             this.pnlNewResource.Controls.Add(this.button8);
             this.pnlNewResource.Controls.Add(this.panel16);
-            this.pnlNewResource.Controls.Add(this.textBox4);
+            this.pnlNewResource.Controls.Add(this.txtID);
             this.pnlNewResource.Controls.Add(this.panel19);
-            this.pnlNewResource.Controls.Add(this.textBox5);
+            this.pnlNewResource.Controls.Add(this.txtName);
             this.pnlNewResource.Controls.Add(this.panel20);
             this.pnlNewResource.Location = new System.Drawing.Point(908, 80);
             this.pnlNewResource.Name = "pnlNewResource";
@@ -834,6 +1084,19 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(253, 10);
             this.panel15.TabIndex = 3;
+            // 
+            // btnMaterNewClose
+            // 
+            this.btnMaterNewClose.BackgroundImage = global::Graphics.Properties.Resources.close;
+            this.btnMaterNewClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMaterNewClose.FlatAppearance.BorderSize = 0;
+            this.btnMaterNewClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaterNewClose.Location = new System.Drawing.Point(109, 12);
+            this.btnMaterNewClose.Name = "btnMaterNewClose";
+            this.btnMaterNewClose.Size = new System.Drawing.Size(30, 30);
+            this.btnMaterNewClose.TabIndex = 20;
+            this.btnMaterNewClose.UseVisualStyleBackColor = true;
+            this.btnMaterNewClose.Click += new System.EventHandler(this.btnMaterNewClose_Click);
             // 
             // label19
             // 
@@ -865,16 +1128,16 @@
             this.label15.TabIndex = 4;
             this.label15.Text = "Mã";
             // 
-            // textBox6
+            // txtSupplier
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox6.Location = new System.Drawing.Point(10, 252);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(234, 22);
-            this.textBox6.TabIndex = 11;
+            this.txtSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.txtSupplier.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSupplier.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplier.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSupplier.Location = new System.Drawing.Point(10, 252);
+            this.txtSupplier.Name = "txtSupplier";
+            this.txtSupplier.Size = new System.Drawing.Size(234, 22);
+            this.txtSupplier.TabIndex = 11;
             // 
             // label16
             // 
@@ -886,16 +1149,16 @@
             this.label16.TabIndex = 4;
             this.label16.Text = "Tên";
             // 
-            // textBox3
+            // txtAmount
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox3.Location = new System.Drawing.Point(10, 196);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 22);
-            this.textBox3.TabIndex = 11;
+            this.txtAmount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.txtAmount.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAmount.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAmount.Location = new System.Drawing.Point(10, 196);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(234, 22);
+            this.txtAmount.TabIndex = 11;
             // 
             // panel21
             // 
@@ -917,6 +1180,7 @@
             this.button8.TabIndex = 0;
             this.button8.Text = "Thêm";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // panel16
             // 
@@ -926,16 +1190,16 @@
             this.panel16.Size = new System.Drawing.Size(234, 1);
             this.panel16.TabIndex = 3;
             // 
-            // textBox4
+            // txtID
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox4.Location = new System.Drawing.Point(10, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(234, 22);
-            this.textBox4.TabIndex = 10;
+            this.txtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtID.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtID.Location = new System.Drawing.Point(10, 100);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(234, 22);
+            this.txtID.TabIndex = 10;
             // 
             // panel19
             // 
@@ -945,16 +1209,16 @@
             this.panel19.Size = new System.Drawing.Size(234, 1);
             this.panel19.TabIndex = 3;
             // 
-            // textBox5
+            // txtName
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox5.Location = new System.Drawing.Point(10, 148);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(234, 22);
-            this.textBox5.TabIndex = 10;
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtName.Location = new System.Drawing.Point(10, 148);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(234, 22);
+            this.txtName.TabIndex = 10;
             // 
             // panel20
             // 
@@ -963,232 +1227,6 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(234, 1);
             this.panel20.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::Graphics.Properties.Resources.refresh;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 30);
-            this.button1.TabIndex = 20;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::Graphics.Properties.Resources.check;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(48, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 30);
-            this.button2.TabIndex = 20;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnEditPrevMater
-            // 
-            this.btnEditPrevMater.BackgroundImage = global::Graphics.Properties.Resources.left_arrow__1_;
-            this.btnEditPrevMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditPrevMater.FlatAppearance.BorderSize = 0;
-            this.btnEditPrevMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditPrevMater.Location = new System.Drawing.Point(3, 13);
-            this.btnEditPrevMater.Name = "btnEditPrevMater";
-            this.btnEditPrevMater.Size = new System.Drawing.Size(30, 30);
-            this.btnEditPrevMater.TabIndex = 18;
-            this.btnEditPrevMater.UseVisualStyleBackColor = true;
-            // 
-            // btnEditCloseMater
-            // 
-            this.btnEditCloseMater.BackgroundImage = global::Graphics.Properties.Resources.close;
-            this.btnEditCloseMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditCloseMater.FlatAppearance.BorderSize = 0;
-            this.btnEditCloseMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCloseMater.Location = new System.Drawing.Point(109, 12);
-            this.btnEditCloseMater.Name = "btnEditCloseMater";
-            this.btnEditCloseMater.Size = new System.Drawing.Size(30, 30);
-            this.btnEditCloseMater.TabIndex = 20;
-            this.btnEditCloseMater.UseVisualStyleBackColor = true;
-            this.btnEditCloseMater.Click += new System.EventHandler(this.btnMaterInfoClose_Click);
-            // 
-            // btnEditNextMater
-            // 
-            this.btnEditNextMater.BackgroundImage = global::Graphics.Properties.Resources.right_arrow__1_;
-            this.btnEditNextMater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditNextMater.FlatAppearance.BorderSize = 0;
-            this.btnEditNextMater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditNextMater.Location = new System.Drawing.Point(220, 13);
-            this.btnEditNextMater.Name = "btnEditNextMater";
-            this.btnEditNextMater.Size = new System.Drawing.Size(30, 30);
-            this.btnEditNextMater.TabIndex = 17;
-            this.btnEditNextMater.UseVisualStyleBackColor = true;
-            // 
-            // btnMaterNewClose
-            // 
-            this.btnMaterNewClose.BackgroundImage = global::Graphics.Properties.Resources.close;
-            this.btnMaterNewClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMaterNewClose.FlatAppearance.BorderSize = 0;
-            this.btnMaterNewClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaterNewClose.Location = new System.Drawing.Point(109, 12);
-            this.btnMaterNewClose.Name = "btnMaterNewClose";
-            this.btnMaterNewClose.Size = new System.Drawing.Size(30, 30);
-            this.btnMaterNewClose.TabIndex = 20;
-            this.btnMaterNewClose.UseVisualStyleBackColor = true;
-            this.btnMaterNewClose.Click += new System.EventHandler(this.btnMaterNewClose_Click);
-            // 
-            // btnAddEmpClose
-            // 
-            this.btnAddEmpClose.BackgroundImage = global::Graphics.Properties.Resources.close;
-            this.btnAddEmpClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddEmpClose.FlatAppearance.BorderSize = 0;
-            this.btnAddEmpClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddEmpClose.Location = new System.Drawing.Point(109, 12);
-            this.btnAddEmpClose.Name = "btnAddEmpClose";
-            this.btnAddEmpClose.Size = new System.Drawing.Size(30, 30);
-            this.btnAddEmpClose.TabIndex = 20;
-            this.btnAddEmpClose.UseVisualStyleBackColor = true;
-            this.btnAddEmpClose.Click += new System.EventHandler(this.btnAddEmpClose_Click);
-            // 
-            // btnMoreInfo
-            // 
-            this.btnMoreInfo.BackgroundImage = global::Graphics.Properties.Resources.three_dots;
-            this.btnMoreInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMoreInfo.FlatAppearance.BorderSize = 0;
-            this.btnMoreInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMoreInfo.Location = new System.Drawing.Point(16, 230);
-            this.btnMoreInfo.Name = "btnMoreInfo";
-            this.btnMoreInfo.Size = new System.Drawing.Size(50, 50);
-            this.btnMoreInfo.TabIndex = 5;
-            this.btnMoreInfo.UseVisualStyleBackColor = true;
-            this.btnMoreInfo.Click += new System.EventHandler(this.btnMoreInfo_Click);
-            // 
-            // btnMode1
-            // 
-            this.btnMode1.BackgroundImage = global::Graphics.Properties.Resources.coffee_pot;
-            this.btnMode1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMode1.FlatAppearance.BorderSize = 0;
-            this.btnMode1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMode1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMode1.Location = new System.Drawing.Point(53, 7);
-            this.btnMode1.Name = "btnMode1";
-            this.btnMode1.Size = new System.Drawing.Size(50, 50);
-            this.btnMode1.TabIndex = 5;
-            this.btnMode1.UseVisualStyleBackColor = true;
-            this.btnMode1.Click += new System.EventHandler(this.btnMode1_Click);
-            // 
-            // btnMode2
-            // 
-            this.btnMode2.BackgroundImage = global::Graphics.Properties.Resources.coffees;
-            this.btnMode2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMode2.FlatAppearance.BorderSize = 0;
-            this.btnMode2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMode2.Location = new System.Drawing.Point(135, 7);
-            this.btnMode2.Name = "btnMode2";
-            this.btnMode2.Size = new System.Drawing.Size(50, 50);
-            this.btnMode2.TabIndex = 5;
-            this.btnMode2.UseVisualStyleBackColor = true;
-            this.btnMode2.Click += new System.EventHandler(this.btnMode2_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackgroundImage = global::Graphics.Properties.Resources.database;
-            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(180, 153);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(50, 50);
-            this.btnSave.TabIndex = 5;
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackgroundImage = global::Graphics.Properties.Resources.plus;
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(21, 153);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(50, 50);
-            this.btnAdd.TabIndex = 5;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnReload
-            // 
-            this.btnReload.BackgroundImage = global::Graphics.Properties.Resources.refresh;
-            this.btnReload.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReload.FlatAppearance.BorderSize = 0;
-            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReload.Location = new System.Drawing.Point(103, 153);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(50, 50);
-            this.btnReload.TabIndex = 5;
-            this.btnReload.UseVisualStyleBackColor = true;
-            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
-            // 
-            // btnEditCancel
-            // 
-            this.btnEditCancel.BackgroundImage = global::Graphics.Properties.Resources.refresh;
-            this.btnEditCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditCancel.FlatAppearance.BorderSize = 0;
-            this.btnEditCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCancel.Location = new System.Drawing.Point(3, 5);
-            this.btnEditCancel.Name = "btnEditCancel";
-            this.btnEditCancel.Size = new System.Drawing.Size(30, 30);
-            this.btnEditCancel.TabIndex = 20;
-            this.btnEditCancel.UseVisualStyleBackColor = true;
-            // 
-            // btnEditAccept
-            // 
-            this.btnEditAccept.BackgroundImage = global::Graphics.Properties.Resources.check;
-            this.btnEditAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditAccept.FlatAppearance.BorderSize = 0;
-            this.btnEditAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditAccept.Location = new System.Drawing.Point(48, 5);
-            this.btnEditAccept.Name = "btnEditAccept";
-            this.btnEditAccept.Size = new System.Drawing.Size(30, 30);
-            this.btnEditAccept.TabIndex = 20;
-            this.btnEditAccept.UseVisualStyleBackColor = true;
-            // 
-            // btnEditPrevProd
-            // 
-            this.btnEditPrevProd.BackgroundImage = global::Graphics.Properties.Resources.left_arrow__1_;
-            this.btnEditPrevProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditPrevProd.FlatAppearance.BorderSize = 0;
-            this.btnEditPrevProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditPrevProd.Location = new System.Drawing.Point(3, 13);
-            this.btnEditPrevProd.Name = "btnEditPrevProd";
-            this.btnEditPrevProd.Size = new System.Drawing.Size(30, 30);
-            this.btnEditPrevProd.TabIndex = 18;
-            this.btnEditPrevProd.UseVisualStyleBackColor = true;
-            // 
-            // btnEditCloseProd
-            // 
-            this.btnEditCloseProd.BackgroundImage = global::Graphics.Properties.Resources.close;
-            this.btnEditCloseProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditCloseProd.FlatAppearance.BorderSize = 0;
-            this.btnEditCloseProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditCloseProd.Location = new System.Drawing.Point(109, 12);
-            this.btnEditCloseProd.Name = "btnEditCloseProd";
-            this.btnEditCloseProd.Size = new System.Drawing.Size(30, 30);
-            this.btnEditCloseProd.TabIndex = 20;
-            this.btnEditCloseProd.UseVisualStyleBackColor = true;
-            this.btnEditCloseProd.Click += new System.EventHandler(this.btnEditClose_Click);
-            // 
-            // btnEditNextProd
-            // 
-            this.btnEditNextProd.BackgroundImage = global::Graphics.Properties.Resources.right_arrow__1_;
-            this.btnEditNextProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditNextProd.FlatAppearance.BorderSize = 0;
-            this.btnEditNextProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditNextProd.Location = new System.Drawing.Point(220, 13);
-            this.btnEditNextProd.Name = "btnEditNextProd";
-            this.btnEditNextProd.Size = new System.Drawing.Size(30, 30);
-            this.btnEditNextProd.TabIndex = 17;
-            this.btnEditNextProd.UseVisualStyleBackColor = true;
             // 
             // frmStorage
             // 
@@ -1287,18 +1325,18 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel pnlResourceInfo;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnEditReturn;
+        private System.Windows.Forms.Button btnEditAccept_Materials;
+        private System.Windows.Forms.Label lblEdit_ID_Mater;
         private System.Windows.Forms.Button btnEditPrevMater;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btnEditCloseMater;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnEditNextMater;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAmount_Marter;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNameMarter;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel pnlNewResource;
         private System.Windows.Forms.Panel panel15;
@@ -1306,18 +1344,20 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.ListBox lbxHistory;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtSupplier;
         private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtSupplier_Mar;
     }
 }

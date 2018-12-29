@@ -38,10 +38,12 @@ namespace Entities.Lists
         {
             this.MaterList = new List<Materials>();
             String sqlString =
-                "select" +
-                " [ResourcesID], [Name], [Amount]" +
+                " select " +
+                " distinct(s.ResourcesID), [Name], [Amount], From_to " +
                 " from" +
-                " [STORAGE]";
+                " STORAGE s, STORAGELN s1" +
+                " where " +
+                " s.ResourcesID = s.ResourcesID" ;
 
             DataTable materialsTable = sqlLink.Select(sqlString);
 
@@ -50,9 +52,55 @@ namespace Entities.Lists
                 String newMaterID = materialsTable.Rows[row][0].ToString();
                 String newMaterName = materialsTable.Rows[row][1].ToString();
                 double newMaterAmmount = Double.Parse(materialsTable.Rows[row][2].ToString());
-                Materials newMaters = new Materials(newMaterID, newMaterName, newMaterAmmount);
+                String newMaterFromto= materialsTable.Rows[row][3].ToString();
+                Materials newMaters = new Materials(newMaterID, newMaterName, newMaterAmmount, newMaterFromto);
                 this.materList.Add(newMaters);
             }
+        }
+
+        public Materials find(String thisID)
+        {
+
+            foreach (Materials mat in this.materList.ToList())
+            {
+                if (mat.Id == thisID)
+                {
+                    return mat;
+                }
+            }
+            return null;
+        }
+
+        public List<Materials> filter(String value, String field)
+        {
+            value = value.ToLower();
+            List<Materials> returnList = new List<Materials>();
+
+            foreach (Materials mater in this.materList)
+            {
+                switch (field)
+                {
+                    case "ID":
+                        String materID = mater.Id.ToLower();
+                        if (materID.Contains(value)) returnList.Add(mater);
+                        break;
+                    case "Name":
+                        String materName = mater.Name.ToLower();
+                        if (materName.Contains(value)) returnList.Add(mater);
+                        break;
+                    case "Ammount":
+                        String materAmmount = mater.Ammount.ToString();
+                        if (materAmmount.Contains(value)) returnList.Add(mater);
+                        break;
+                    case "Supplier":
+                        String materSupp = mater.Supplier.ToLower();
+                        if (materSupp.Contains(value)) returnList.Add(mater);
+                        break;
+                }
+
+            }
+
+            return returnList;
         }
 
     }
