@@ -16,3 +16,4 @@ D:\cswp\Camana\Graphics\obj\Debug\Graphics.csproj.CopyComplete
 D:\cswp\Camana\Graphics\obj\Debug\Graphics.frmStorage.resources
 D:\cswp\Camana\Graphics\obj\Debug\Graphics.frmDash.resources
 D:\cswp\Camana\Graphics\obj\Debug\Graphics.frmSale.resources
+D:\cswp\Camana\Graphics\obj\Debug\Graphics.SaleProductListItem.resources
