@@ -12,41 +12,19 @@ namespace Entities.Lists
     {
         private List<Bills> billList;
         private SqlLink sqlLink;
-        private HashSet<String> modifiedIdS;
-        private HashSet<String> deletedIDS;
-        private HashSet<String> newIDS;
 
         public BillsList()
         {
             this.billList = new List<Bills>();
-            this.modifiedIdS = new HashSet<String>();
             sqlLink = new SqlLink();
-            this.deletedIDS = new HashSet<String>();
-            this.newIDS= new HashSet<String>();
 
         }
 
-        public HashSet<String> ModifiedId { get => modifiedIdS; set => modifiedIdS = value; }
         public List<Bills> BillList { get => billList; set => billList = value; }
 
         public void add(Bills newBill)
         {
             this.billList.Add(newBill);
-            newIDS.Add(newBill.Id);
-        }
-
-        public void remove(String id)
-        {
-            foreach (Bills bill in this.billList.ToList())
-            {
-                if (bill.Id.Equals(id, StringComparison.CurrentCultureIgnoreCase))
-                {
-                    this.billList.Remove(bill);
-                }
-            }
-            deletedIDS.Add(id);
-            modifiedIdS.Remove(id);
-            newIDS.Remove(id);
         }
 
         public Bills find(String thisID)
@@ -73,11 +51,15 @@ namespace Entities.Lists
                 {
                     case "Id":
                         String billID = bill.Id.ToLower();
-                        if (bill.Id.Contains(value)) returnList.Add(bill);
+                        if (billID.Contains(value)) returnList.Add(bill);
                         break;
                     case "Emp_id":
                         String empName = bill.Emp_id.ToLower();
                         if (empName.Contains(value)) returnList.Add(bill);
+                        break;
+                    case "DayCreated":
+                        String date = bill.Date_created.ToShortDateString() + bill.Date_created.ToShortTimeString();
+                        if (date.Contains(value)) returnList.Add(bill);
                         break;
                 }
 
@@ -105,61 +87,28 @@ namespace Entities.Lists
 
                 this.billList.Add(newBill);
             }
-        }
 
-        public void saveChanges()
-        {
-            foreach (String billID in this.newIDS)
+            foreach(Bills bll in this.billList)
             {
-                foreach (Bills currentbill in this.billList)
-                {
-                    if (currentbill.Id == billID)
-                    {
+                String sqlStringbll = "select p.ProductID, p.ProductName, p.Price, b.Amount " +
+                    " from PRODUCT p, BILL_DETAIL b " +
+                    " where b.ProductID = p.ProductID and b.BillID = '" + bll.Id + "'";
 
-                        String nonSelectString =
-                        "insert " + "into " + "BILL " +
-                        "(" + "BillID, " + "EmpID, " + "Date " + ")" +
-                        "values( " +
-                        "'" + currentbill.Id + "', " +
-                        "'" + currentbill.Emp_id + "', " +
-                        "'" + currentbill.Date_created.ToShortDateString() + "') ";
-                        sqlLink.NonSelect(nonSelectString);
-                        break;
-                    }
+                DataTable ProTable = sqlLink.Select(sqlStringbll);
+
+                for (int row = 0; row < ProTable.Rows.Count; row++)
+                {
+                    String newProID = ProTable.Rows[row][0].ToString();
+                    String newProName = ProTable.Rows[row][1].ToString();                    
+                    Double newPrice = Double.Parse(ProTable.Rows[row][2].ToString());
+                    int newProAmmount = Int32.Parse(ProTable.Rows[row][3].ToString());
+
+                    Products newPro = new Products(newProID, newProName, newPrice);
+
+                    bll.add_product(newPro, newProAmmount);
                 }
             }
-
-            foreach (String billId in this.ModifiedId)
-            {
-                foreach (Bills currentbill in this.billList)
-                {
-                    if (currentbill.Id == billId)
-                    {
-
-                        String nonSelectString =
-                            "update " + "BILL " + "set " +
-                            "EmpID= " + "N'" + currentbill.Emp_id + "', " +
-                            "Date= " + "'" + currentbill.Date_created.ToShortDateString() + "'";
-                        sqlLink.NonSelect(nonSelectString);
-                        break;
-                    }
-                }
-            }
-
-            foreach (String billId in this.deletedIDS)
-            {
-                String nonSelectString =
-                "delete " + "from " + "EMPLOYEE " +
-                "where " + "EmpID= " + "'" + billId + "'";
-
-                sqlLink.NonSelect(nonSelectString);
-            }
-            this.newIDS = new HashSet<string>();
-            this.deletedIDS = new HashSet<String>();
-            this.ModifiedId = new HashSet<String>();
         }
-
-
 
     }
 }

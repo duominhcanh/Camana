@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entities;
 
 namespace Graphics
 {
@@ -24,6 +25,7 @@ namespace Graphics
             frmDashWelcome1.clickCall = this.Logout_click;
             animationTimer.Interval = 2;
             animationTimer.Start();
+            Program.us = new Users();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -31,8 +33,33 @@ namespace Graphics
             animationTimer.Tick += slideIn;
 
             //Công việc cần làm để login thành công, sau đó đổi login status
+            int logs = Program.us.getLoginStatus(txtUserName.Text, txtPassword.Text);
+            switch (logs)
+            {
+                case 0:
+                    txtUserName.Text = "";
+                    txtPassword.Text = "";
+                    frmDashWelcome1.setName(Program.us.CurEmp.Name);
+                    this.LoginStatus = true;
 
-            this.LoginStatus = true;
+                    if(Program.us.Role != "0")
+                    {
+                        btnPeople.Visible = false;
+                    }
+                    else
+                    {
+                        btnPeople.Visible = true;
+                    }
+
+                    break;
+                case 1:
+                    MessageBox.Show("Sai mật khẩu, kiểm tra lại!");
+                    break;
+                case 2:
+                    MessageBox.Show("Tài khoản không tồn tại");
+                    break;
+            }
+
         }
 
         public void btnLogout_Click(object sender, EventArgs e)
@@ -107,7 +134,8 @@ namespace Graphics
         private void btnSales_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-
+            frmSale salf = new frmSale();
+            salf.ShowDialog();
 
             this.Visible = true;
         }
@@ -124,13 +152,7 @@ namespace Graphics
         {
             this.Visible = false;
 
-
-            this.Visible = true;
-        }
-
-        private void btnSalary_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
+            new frmEmployees().ShowDialog();
 
             this.Visible = true;
         }

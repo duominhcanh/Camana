@@ -51,6 +51,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnFindBill = new System.Windows.Forms.Button();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.lblUserEmpName = new System.Windows.Forms.Label();
             this.lsProducts = new System.Windows.Forms.FlowLayoutPanel();
             this.dgvBill = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
@@ -71,6 +72,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblDateTime = new System.Windows.Forms.Label();
+            this.txtnewBillID = new System.Windows.Forms.Label();
             this.pnlCount.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlProAction.SuspendLayout();
@@ -294,7 +296,7 @@
             this.lblTitle.BackColor = System.Drawing.Color.White;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semilight", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTitle.Location = new System.Drawing.Point(7, 12);
+            this.lblTitle.Location = new System.Drawing.Point(7, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(246, 35);
             this.lblTitle.TabIndex = 4;
@@ -312,16 +314,27 @@
             this.btnFindBill.TabIndex = 0;
             this.btnFindBill.Text = "Tra cứu đơn hàng";
             this.btnFindBill.UseVisualStyleBackColor = false;
+            this.btnFindBill.Click += new System.EventHandler(this.btnFindBill_Click);
             // 
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.White;
+            this.pnlTop.Controls.Add(this.lblUserEmpName);
             this.pnlTop.Controls.Add(this.btnFindBill);
             this.pnlTop.Controls.Add(this.lblTitle);
             this.pnlTop.Location = new System.Drawing.Point(10, 12);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(1153, 62);
             this.pnlTop.TabIndex = 10;
+            // 
+            // lblUserEmpName
+            // 
+            this.lblUserEmpName.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserEmpName.Location = new System.Drawing.Point(15, 39);
+            this.lblUserEmpName.Name = "lblUserEmpName";
+            this.lblUserEmpName.Size = new System.Drawing.Size(378, 23);
+            this.lblUserEmpName.TabIndex = 5;
+            this.lblUserEmpName.Text = "Tên Emp";
             // 
             // lsProducts
             // 
@@ -542,6 +555,7 @@
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.lblDateTime);
+            this.panel5.Controls.Add(this.txtnewBillID);
             this.panel5.Location = new System.Drawing.Point(734, 87);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(429, 58);
@@ -565,6 +579,18 @@
             this.lblDateTime.TabIndex = 0;
             this.lblDateTime.Text = "date";
             this.lblDateTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtnewBillID
+            // 
+            this.txtnewBillID.AutoSize = true;
+            this.txtnewBillID.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnewBillID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtnewBillID.Location = new System.Drawing.Point(9, 9);
+            this.txtnewBillID.Name = "txtnewBillID";
+            this.txtnewBillID.Size = new System.Drawing.Size(32, 30);
+            this.txtnewBillID.TabIndex = 0;
+            this.txtnewBillID.Text = "ID";
+            this.txtnewBillID.Click += new System.EventHandler(this.txtnewBillID_Click);
             // 
             // frmSale
             // 
@@ -599,6 +625,7 @@
             this.panel4.PerformLayout();
             this.pnlItemEdit.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -645,5 +672,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label lblDateTime;
+        private System.Windows.Forms.Label lblUserEmpName;
+        private System.Windows.Forms.Label txtnewBillID;
     }
 }

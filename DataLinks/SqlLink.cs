@@ -1,4 +1,4 @@
-﻿//using System;
+﻿using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -10,8 +10,8 @@ namespace DataLinks
         private SqlDataAdapter Adapter;
         private DataSet SetData;
 
-        private string ServerName = "DESKTOP-6GI6MES\\SQLEXPRESS";
-        //private String ServerName = "DESKTOP-87OOTCP";
+        //private string ServerName = "DESKTOP-6GI6MES\\SQLEXPRESS";
+        private String ServerName = "DESKTOP-87OOTCP";
         private string DbName = "QLCAFE";
 
         public SqlLink()

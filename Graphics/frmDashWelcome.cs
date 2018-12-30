@@ -24,5 +24,10 @@ namespace Graphics
             object[] arr = { null, null };
             clickCall.DynamicInvoke(arr);
         }
+
+        public void setName(String name)
+        {
+            lblEmpName.Text = name;
+        }
     }
 }

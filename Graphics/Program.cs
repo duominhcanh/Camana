@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entities;
 
 namespace Graphics
 {
-    static class Program
+    public static class Program
     {
+        public static Users us = new Users();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmStorage());
+            frmDash dash = new frmDash();
+            Application.Run(dash);
         }
     }
 }

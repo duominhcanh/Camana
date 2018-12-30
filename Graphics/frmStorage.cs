@@ -8,9 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entities;
-using System.Data;
 using System.Data.SqlClient;
-using Entities;
 
 namespace Graphics
 {
@@ -70,6 +68,7 @@ namespace Graphics
             cbbFilterMode.DisplayMember = "Key";
             cbbFilterMode.ValueMember = "Value";
 
+            lblUserEmpName.Text = Program.us.CurEmp.Name;
         }
 
         private void fillProduct()

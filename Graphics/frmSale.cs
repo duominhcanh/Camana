@@ -58,6 +58,8 @@ namespace Graphics
             dgvBill.MultiSelect = false;
 
             pnlItemEdit.Visible = false;
+
+            lblUserEmpName.Text = Program.us.CurEmp.Name;
         }
 
         private void showInfo(Products pro)
@@ -123,12 +125,12 @@ namespace Graphics
 
         private void btnProAdd_Click(object sender, EventArgs e)
         {
-            currSum += selectedItem.Key.Price * selectedItem.Value;
             if (currBill == null)
             {
-                currBill = new Bills("01", "E01", DateTime.Now);
+                currBill = new Bills(Program.us.CurEmp.Id, DateTime.Now);
                 currBill.add_product(selectedItem.Key, selectedItem.Value);
                 lblDateTime.Text = currBill.Date_created.ToShortTimeString() + " - " + currBill.Date_created.ToShortDateString();
+                txtnewBillID.Text = currBill.Id;
             }
             else
             {
@@ -167,7 +169,6 @@ namespace Graphics
                 {
                     dgvBill.Rows.Add(item.Key.ID, item.Key.Name, item.Value, item.Key.Price, item.Key.Price * item.Value);
                 }
-                lblSumAll.Text = currSum.ToString();
             }
             else
             {
@@ -183,6 +184,16 @@ namespace Graphics
                     }
                 } while (dgvBill.Rows.Count > 1);
             }
+            currSum = 0;
+            if(currBill!= null)
+            {
+                foreach (KeyValuePair<Products, int> item in currBill.Products)
+                {
+                    currSum += item.Key.Price * item.Value;
+                }
+            }
+
+            lblSumAll.Text = currSum.ToString();
         }
 
         private void filtarDaList()
@@ -269,11 +280,20 @@ namespace Graphics
         {
             currBill = null;
             updateDaBill();
+            txtnewBillID.Text = "";
+            lblDateTime.Text = "";
         }
 
         private void btnBillPay_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Thanh toán?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                currBill.saveToDb();
+                currBill = null;
+                updateDaBill();
+                txtnewBillID.Text = "";
+                lblDateTime.Text = "";
+            }
         }
 
         private void txtFilter_TextChanged(object sender, EventArgs e)
@@ -281,6 +301,14 @@ namespace Graphics
             filtarDaList();
         }
 
-      
+        private void btnFindBill_Click(object sender, EventArgs e)
+        {
+            new frmBillsManager().ShowDialog();
+        }
+
+        private void txtnewBillID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

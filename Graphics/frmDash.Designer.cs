@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSalary = new System.Windows.Forms.Button();
             this.btnStorage = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.pnlLogin = new System.Windows.Forms.Panel();
-            this.frmDashWelcome1 = new Graphics.frmDashWelcome();
             this.pnlRuler1 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
@@ -47,26 +45,12 @@
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.ptbCafe = new System.Windows.Forms.PictureBox();
+            this.frmDashWelcome1 = new Graphics.frmDashWelcome();
             this.pnlLogin.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCafe)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSalary
-            // 
-            this.btnSalary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSalary.FlatAppearance.BorderSize = 0;
-            this.btnSalary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalary.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalary.ForeColor = System.Drawing.Color.White;
-            this.btnSalary.Location = new System.Drawing.Point(203, 64);
-            this.btnSalary.Name = "btnSalary";
-            this.btnSalary.Size = new System.Drawing.Size(188, 49);
-            this.btnSalary.TabIndex = 15;
-            this.btnSalary.Text = "Thu chi";
-            this.btnSalary.UseVisualStyleBackColor = false;
-            this.btnSalary.Click += new System.EventHandler(this.btnSalary_Click);
             // 
             // btnStorage
             // 
@@ -117,15 +101,6 @@
             this.pnlLogin.Size = new System.Drawing.Size(205, 355);
             this.pnlLogin.TabIndex = 14;
             // 
-            // frmDashWelcome1
-            // 
-            this.frmDashWelcome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
-            this.frmDashWelcome1.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frmDashWelcome1.Location = new System.Drawing.Point(-206, 0);
-            this.frmDashWelcome1.Name = "frmDashWelcome1";
-            this.frmDashWelcome1.Size = new System.Drawing.Size(205, 355);
-            this.frmDashWelcome1.TabIndex = 6;
-            // 
             // pnlRuler1
             // 
             this.pnlRuler1.BackColor = System.Drawing.Color.White;
@@ -138,23 +113,24 @@
             // 
             this.txtPassword.BackColor = System.Drawing.Color.White;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.Location = new System.Drawing.Point(13, 165);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(174, 16);
-            this.txtPassword.TabIndex = 4;
+            this.txtPassword.PasswordChar = '•';
+            this.txtPassword.Size = new System.Drawing.Size(174, 18);
+            this.txtPassword.TabIndex = 1;
             // 
             // txtUserName
             // 
             this.txtUserName.BackColor = System.Drawing.Color.White;
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUserName.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUserName.Location = new System.Drawing.Point(13, 116);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(174, 16);
-            this.txtUserName.TabIndex = 4;
+            this.txtUserName.Size = new System.Drawing.Size(174, 18);
+            this.txtUserName.TabIndex = 0;
             // 
             // lblPassword
             // 
@@ -250,8 +226,7 @@
             this.pnlMenu.Controls.Add(this.btnSales);
             this.pnlMenu.Controls.Add(this.btnStorage);
             this.pnlMenu.Controls.Add(this.btnPeople);
-            this.pnlMenu.Controls.Add(this.btnSalary);
-            this.pnlMenu.Location = new System.Drawing.Point(700, 100);
+            this.pnlMenu.Location = new System.Drawing.Point(702, 100);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(391, 113);
             this.pnlMenu.TabIndex = 23;
@@ -282,12 +257,22 @@
             // ptbCafe
             // 
             this.ptbCafe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbCafe.Image = global::Graphics.Properties.Resources.cafe_khong_duong_2;
             this.ptbCafe.Location = new System.Drawing.Point(572, 234);
             this.ptbCafe.Name = "ptbCafe";
             this.ptbCafe.Size = new System.Drawing.Size(128, 121);
             this.ptbCafe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbCafe.TabIndex = 21;
             this.ptbCafe.TabStop = false;
+            // 
+            // frmDashWelcome1
+            // 
+            this.frmDashWelcome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
+            this.frmDashWelcome1.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmDashWelcome1.Location = new System.Drawing.Point(-206, 0);
+            this.frmDashWelcome1.Name = "frmDashWelcome1";
+            this.frmDashWelcome1.Size = new System.Drawing.Size(205, 355);
+            this.frmDashWelcome1.TabIndex = 6;
             // 
             // frmDash
             // 
@@ -318,8 +303,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnSalary;
         private System.Windows.Forms.Button btnPeople;
         private System.Windows.Forms.Button btnStorage;
         private System.Windows.Forms.Button btnSales;

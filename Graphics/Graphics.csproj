@@ -50,6 +50,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmBillsManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillsManager.Designer.cs">
+      <DependentUpon>frmBillsManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,8 +94,14 @@
     <Compile Include="SaleProductListItem.Designer.cs">
       <DependentUpon>SaleProductListItem.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmBillsManager.resx">
+      <DependentUpon>frmBillsManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDash.resx">
       <DependentUpon>frmDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashWelcome.resx">
+      <DependentUpon>frmDashWelcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployees.resx">
       <DependentUpon>frmEmployees.cs</DependentUpon>
@@ -167,6 +179,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coffee-pot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafe-khong-duong-2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

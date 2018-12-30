@@ -48,6 +48,8 @@ namespace Graphics
             cbbFilterMode.DataSource = new BindingSource(filterModeItems, null);
             cbbFilterMode.DisplayMember = "Key";
             cbbFilterMode.ValueMember = "Value";
+
+            lblUserEmpName.Text = Program.us.CurEmp.Name;
         }
 
         #region Methods

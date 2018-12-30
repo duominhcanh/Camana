@@ -111,6 +111,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtNewEmpName = new System.Windows.Forms.TextBox();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.lblUserEmpName = new System.Windows.Forms.Label();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeesTable)).BeginInit();
             this.pnlTop.SuspendLayout();
@@ -379,6 +380,7 @@
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.White;
+            this.pnlTop.Controls.Add(this.lblUserEmpName);
             this.pnlTop.Controls.Add(this.label6);
             this.pnlTop.Location = new System.Drawing.Point(12, 10);
             this.pnlTop.Name = "pnlTop";
@@ -390,7 +392,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semilight", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(7, 12);
+            this.label6.Location = new System.Drawing.Point(5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(263, 35);
             this.label6.TabIndex = 4;
@@ -1061,6 +1063,15 @@
             this.panel17.Size = new System.Drawing.Size(234, 1);
             this.panel17.TabIndex = 3;
             // 
+            // lblUserEmpName
+            // 
+            this.lblUserEmpName.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserEmpName.Location = new System.Drawing.Point(9, 39);
+            this.lblUserEmpName.Name = "lblUserEmpName";
+            this.lblUserEmpName.Size = new System.Drawing.Size(378, 23);
+            this.lblUserEmpName.TabIndex = 6;
+            this.lblUserEmpName.Text = "Tên Emp";
+            // 
             // frmEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1172,6 +1183,7 @@
         private System.Windows.Forms.Panel pnlEditAction;
         private System.Windows.Forms.Button btnEditCancel;
         private System.Windows.Forms.Button btnEditAccept;
+        private System.Windows.Forms.Label lblUserEmpName;
     }
 }
 

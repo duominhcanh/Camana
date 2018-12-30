@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btnLogout = new System.Windows.Forms.Button();
-            this.pnlRuler1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pnlRuler1 = new System.Windows.Forms.Panel();
+            this.lblEmpName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLogout
@@ -50,14 +50,6 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // pnlRuler1
-            // 
-            this.pnlRuler1.BackColor = System.Drawing.Color.White;
-            this.pnlRuler1.Location = new System.Drawing.Point(43, 120);
-            this.pnlRuler1.Name = "pnlRuler1";
-            this.pnlRuler1.Size = new System.Drawing.Size(119, 1);
-            this.pnlRuler1.TabIndex = 6;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -68,23 +60,31 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Xin Chào";
             // 
-            // label2
+            // pnlRuler1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(77, 130);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 25);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Tên";
+            this.pnlRuler1.BackColor = System.Drawing.Color.White;
+            this.pnlRuler1.Location = new System.Drawing.Point(43, 120);
+            this.pnlRuler1.Name = "pnlRuler1";
+            this.pnlRuler1.Size = new System.Drawing.Size(119, 1);
+            this.pnlRuler1.TabIndex = 6;
+            // 
+            // lblEmpName
+            // 
+            this.lblEmpName.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpName.ForeColor = System.Drawing.Color.White;
+            this.lblEmpName.Location = new System.Drawing.Point(15, 130);
+            this.lblEmpName.Name = "lblEmpName";
+            this.lblEmpName.Size = new System.Drawing.Size(174, 25);
+            this.lblEmpName.TabIndex = 8;
+            this.lblEmpName.Text = "Tên";
+            this.lblEmpName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmDashWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblEmpName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlRuler1);
             this.Controls.Add(this.btnLogout);
@@ -99,8 +99,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Panel pnlRuler1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel pnlRuler1;
+        private System.Windows.Forms.Label lblEmpName;
     }
 }
