@@ -280,5 +280,7 @@ namespace Graphics
         {
             filtarDaList();
         }
+
+      
     }
 }

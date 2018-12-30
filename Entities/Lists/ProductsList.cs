@@ -83,24 +83,7 @@ namespace Entities.Lists
 
                 this.ProductList.Add(newPro);
             }
-            foreach(Products pro in this.ProductList)
-            {
-                sqlString =
-                    "select" +
-                    " s.ResourcesID, s.Name" +
-                    " from" +
-                    " PRODUCT_DETAIL pd, STORAGE s"+
-                    " where pd.ProductID='"+ pro.ID +"' and s.ResourcesID= pd.ResourcesID";
-                DataTable resourcesTable = sqlLink.Select(sqlString);
-                for (int row = 0; row < productsTable.Rows.Count; row++)
-                {
-                    String newResID = productsTable.Rows[row][0].ToString();
-                    String newResName = productsTable.Rows[row][1].ToString();
-
-                    pro.Resources.Add(newResID, newResName);
-                }
-
-            }
+           
         }
 
         public void saveChanges()
@@ -182,6 +165,32 @@ namespace Entities.Lists
 
             return returnList;
         }
+
+        /*
+        public void load_resoucse()
+        {
+            this.ProductList = new List<Products>();
+            string sqlString =
+                    "select" +
+                    " s.ResourcesID, s.Name" +
+                    " from" +
+                    " PRODUCT_DETAIL pd, STORAGE s" +
+                    " where pd.ProductID='" + pro + "' and s.ResourcesID = pd.ResourcesID";
+            DataTable productsTable = sqlLink.Select(sqlString);
+
+            for (int row = 0; row < productsTable.Rows.Count; row++)
+            {
+                String newProID = productsTable.Rows[row][0].ToString();
+                String newProName = productsTable.Rows[row][1].ToString();
+                double newProPrice = Double.Parse(productsTable.Rows[row][2].ToString());
+
+
+                Products newPro = new Products(newProID, newProName, newProPrice);
+
+                this.ProductList.Add(newPro);
+            }
+        }
+        */
 
 
     }

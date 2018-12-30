@@ -1,4 +1,4 @@
-﻿using System;
+﻿//using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -10,15 +10,15 @@ namespace DataLinks
         private SqlDataAdapter Adapter;
         private DataSet SetData;
 
-        private String ServerName = "DESKTOP-6GI6MES\\SQLEXPRESS";
+        private string ServerName = "DESKTOP-6GI6MES\\SQLEXPRESS";
         //private String ServerName = "DESKTOP-87OOTCP";
-        private String DbName = "QLCAFE";
+        private string DbName = "QLCAFE";
 
         public SqlLink()
         {
             try
             {
-                String connectionString = "Data source=" + ServerName + "; database=" + DbName + "; Integrated Security=SSPI";
+                string connectionString = "Data source=" + ServerName + "; database=" + DbName + "; Integrated Security=SSPI";
                 Connection = new SqlConnection(connectionString);
             }
             catch (SqlException)
@@ -27,7 +27,7 @@ namespace DataLinks
             }
         }
 
-        public DataTable Select(String cmd)
+        public DataTable Select(string  cmd)
         {
             Adapter = new SqlDataAdapter(cmd, Connection);
             SetData = new DataSet();
@@ -35,7 +35,7 @@ namespace DataLinks
             return SetData.Tables[0];
         }
 
-        public void NonSelect(String Command)
+        public void NonSelect(string Command)
         {
             SqlCommand SqlCommand = new SqlCommand(Command, Connection);
             Connection.Open();

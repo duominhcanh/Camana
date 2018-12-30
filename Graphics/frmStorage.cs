@@ -267,7 +267,13 @@ namespace Graphics
                 {
                     Products currPro = proList.ProductList[dgvMainTable.SelectedRows[0].Index];
                     lblEditID.Text = currPro.ID;
+
+                    currPro.getMaterFromDb();
+                    lbxResource.DataSource = new BindingSource(currPro.MaterDict, null);
+                    lbxResource.DisplayMember ="Value";
+                    lbxResource.ValueMember = "Key";
                 }
+
             }
             else if(mode == 2)
             {
@@ -342,6 +348,12 @@ namespace Graphics
                     Products currPro = proList.ProductList[dgvMainTable.SelectedRows[0].Index];
                     lblEditID.Text = currPro.ID;
                     fillProduct();
+
+
+                    currPro.getMaterFromDb();
+                    lbxResource.DataSource = new BindingSource(currPro.MaterDict, null);
+                    lbxResource.DisplayMember = "Value";
+                    lbxResource.ValueMember = "Key";
                 }
                 else if(mode == 2)
                 {
@@ -428,9 +440,9 @@ namespace Graphics
 
         private void btnEditPrevProd_Click(object sender, EventArgs e)
         {
-            if (dgvMainTable.SelectedRows[0].Index == dgvMainTable.RowCount - 1)
+            if (dgvMainTable.SelectedRows[0].Index == 0)
             {
-                dgvMainTable.Rows[0].Selected = true;
+                dgvMainTable.Rows[dgvMainTable.RowCount - 1].Selected = true;
 
             }
             else
@@ -507,6 +519,15 @@ namespace Graphics
             {
                 updateGridView_Materials(dgvMainTable, materList.filter(txtFilter.Text, cbbFilterMode.SelectedValue.ToString()));
             }
+        }
+
+        private void lbxHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbxResource_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 
