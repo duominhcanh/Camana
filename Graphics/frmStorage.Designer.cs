@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pnlEditAction = new System.Windows.Forms.Panel();
             this.btnEditCancel = new System.Windows.Forms.Button();
@@ -88,21 +88,17 @@
             this.dgvMainTable = new System.Windows.Forms.DataGridView();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.lblUserEmpName = new System.Windows.Forms.Label();
             this.pnlResourceInfo = new System.Windows.Forms.Panel();
             this.lbxHistory = new System.Windows.Forms.ListBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnEditReturn = new System.Windows.Forms.Button();
-            this.btnEditAccept_Materials = new System.Windows.Forms.Button();
             this.lblEdit_ID_Mater = new System.Windows.Forms.Label();
             this.btnEditPrevMater = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnEditCloseMater = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.btnEditNextMater = new System.Windows.Forms.Button();
-            this.txtSupplier_Mar = new System.Windows.Forms.TextBox();
             this.txtAmount_Marter = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtNameMarter = new System.Windows.Forms.TextBox();
@@ -124,7 +120,6 @@
             this.panel19 = new System.Windows.Forms.Panel();
             this.txtName = new System.Windows.Forms.TextBox();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.lblUserEmpName = new System.Windows.Forms.Label();
             this.pnlEditAction.SuspendLayout();
             this.pnlAddPro.SuspendLayout();
             this.pnlLeft.SuspendLayout();
@@ -132,7 +127,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMainTable)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.pnlResourceInfo.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.pnlNewResource.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -786,22 +780,22 @@
             this.dgvMainTable.Name = "dgvMainTable";
             this.dgvMainTable.ReadOnly = true;
             this.dgvMainTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(237)))), ((int)(((byte)(159)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMainTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semilight", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(237)))), ((int)(((byte)(159)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMainTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvMainTable.RowHeadersWidth = 30;
             this.dgvMainTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(224)))), ((int)(((byte)(143)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
-            this.dgvMainTable.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semilight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(224)))), ((int)(((byte)(143)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(53)))), ((int)(((byte)(66)))));
+            this.dgvMainTable.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvMainTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMainTable.Size = new System.Drawing.Size(889, 560);
             this.dgvMainTable.TabIndex = 8;
@@ -828,21 +822,27 @@
             this.pnlTop.Size = new System.Drawing.Size(1153, 62);
             this.pnlTop.TabIndex = 9;
             // 
+            // lblUserEmpName
+            // 
+            this.lblUserEmpName.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserEmpName.Location = new System.Drawing.Point(11, 42);
+            this.lblUserEmpName.Name = "lblUserEmpName";
+            this.lblUserEmpName.Size = new System.Drawing.Size(378, 23);
+            this.lblUserEmpName.TabIndex = 6;
+            this.lblUserEmpName.Text = "Tên Emp";
+            // 
             // pnlResourceInfo
             // 
             this.pnlResourceInfo.BackColor = System.Drawing.Color.White;
             this.pnlResourceInfo.Controls.Add(this.lbxHistory);
-            this.pnlResourceInfo.Controls.Add(this.panel7);
             this.pnlResourceInfo.Controls.Add(this.lblEdit_ID_Mater);
             this.pnlResourceInfo.Controls.Add(this.btnEditPrevMater);
             this.pnlResourceInfo.Controls.Add(this.panel8);
             this.pnlResourceInfo.Controls.Add(this.btnEditCloseMater);
             this.pnlResourceInfo.Controls.Add(this.label17);
-            this.pnlResourceInfo.Controls.Add(this.label20);
             this.pnlResourceInfo.Controls.Add(this.label12);
             this.pnlResourceInfo.Controls.Add(this.label13);
             this.pnlResourceInfo.Controls.Add(this.btnEditNextMater);
-            this.pnlResourceInfo.Controls.Add(this.txtSupplier_Mar);
             this.pnlResourceInfo.Controls.Add(this.txtAmount_Marter);
             this.pnlResourceInfo.Controls.Add(this.panel9);
             this.pnlResourceInfo.Controls.Add(this.txtNameMarter);
@@ -861,46 +861,11 @@
             this.lbxHistory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lbxHistory.FormattingEnabled = true;
             this.lbxHistory.ItemHeight = 21;
-            this.lbxHistory.Location = new System.Drawing.Point(10, 300);
+            this.lbxHistory.Location = new System.Drawing.Point(9, 260);
             this.lbxHistory.Name = "lbxHistory";
-            this.lbxHistory.Size = new System.Drawing.Size(234, 189);
+            this.lbxHistory.Size = new System.Drawing.Size(234, 273);
             this.lbxHistory.TabIndex = 22;
             this.lbxHistory.SelectedIndexChanged += new System.EventHandler(this.lbxHistory_SelectedIndexChanged);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnEditReturn);
-            this.panel7.Controls.Add(this.btnEditAccept_Materials);
-            this.panel7.Location = new System.Drawing.Point(158, 80);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(87, 38);
-            this.panel7.TabIndex = 21;
-            // 
-            // btnEditReturn
-            // 
-            this.btnEditReturn.BackgroundImage = global::Graphics.Properties.Resources.refresh;
-            this.btnEditReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditReturn.FlatAppearance.BorderSize = 0;
-            this.btnEditReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditReturn.Location = new System.Drawing.Point(3, 5);
-            this.btnEditReturn.Name = "btnEditReturn";
-            this.btnEditReturn.Size = new System.Drawing.Size(30, 30);
-            this.btnEditReturn.TabIndex = 20;
-            this.btnEditReturn.UseVisualStyleBackColor = true;
-            this.btnEditReturn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnEditAccept_Materials
-            // 
-            this.btnEditAccept_Materials.BackgroundImage = global::Graphics.Properties.Resources.check;
-            this.btnEditAccept_Materials.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditAccept_Materials.FlatAppearance.BorderSize = 0;
-            this.btnEditAccept_Materials.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditAccept_Materials.Location = new System.Drawing.Point(48, 5);
-            this.btnEditAccept_Materials.Name = "btnEditAccept_Materials";
-            this.btnEditAccept_Materials.Size = new System.Drawing.Size(30, 30);
-            this.btnEditAccept_Materials.TabIndex = 20;
-            this.btnEditAccept_Materials.UseVisualStyleBackColor = true;
-            this.btnEditAccept_Materials.Click += new System.EventHandler(this.btnEditAccept_Materials_Click);
             // 
             // lblEdit_ID_Mater
             // 
@@ -952,21 +917,11 @@
             // 
             this.label17.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label17.Location = new System.Drawing.Point(10, 274);
+            this.label17.Location = new System.Drawing.Point(9, 234);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(234, 21);
             this.label17.TabIndex = 4;
             this.label17.Text = "Lịch sử nhập";
-            // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label20.Location = new System.Drawing.Point(10, 227);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(234, 21);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Nhà cung cấp ";
             // 
             // label12
             // 
@@ -1001,17 +956,6 @@
             this.btnEditNextMater.UseVisualStyleBackColor = true;
             this.btnEditNextMater.Click += new System.EventHandler(this.btnEditNextMater_Click);
             // 
-            // txtSupplier_Mar
-            // 
-            this.txtSupplier_Mar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.txtSupplier_Mar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSupplier_Mar.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupplier_Mar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSupplier_Mar.Location = new System.Drawing.Point(10, 249);
-            this.txtSupplier_Mar.Name = "txtSupplier_Mar";
-            this.txtSupplier_Mar.Size = new System.Drawing.Size(234, 22);
-            this.txtSupplier_Mar.TabIndex = 11;
-            // 
             // txtAmount_Marter
             // 
             this.txtAmount_Marter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -1020,6 +964,7 @@
             this.txtAmount_Marter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAmount_Marter.Location = new System.Drawing.Point(10, 196);
             this.txtAmount_Marter.Name = "txtAmount_Marter";
+            this.txtAmount_Marter.ReadOnly = true;
             this.txtAmount_Marter.Size = new System.Drawing.Size(234, 22);
             this.txtAmount_Marter.TabIndex = 11;
             // 
@@ -1039,13 +984,14 @@
             this.txtNameMarter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNameMarter.Location = new System.Drawing.Point(10, 148);
             this.txtNameMarter.Name = "txtNameMarter";
+            this.txtNameMarter.ReadOnly = true;
             this.txtNameMarter.Size = new System.Drawing.Size(234, 22);
             this.txtNameMarter.TabIndex = 10;
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(191)))), ((int)(((byte)(107)))));
-            this.panel11.Location = new System.Drawing.Point(11, 446);
+            this.panel11.Location = new System.Drawing.Point(10, 536);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(234, 1);
             this.panel11.TabIndex = 3;
@@ -1232,15 +1178,6 @@
             this.panel20.Size = new System.Drawing.Size(234, 1);
             this.panel20.TabIndex = 3;
             // 
-            // lblUserEmpName
-            // 
-            this.lblUserEmpName.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserEmpName.Location = new System.Drawing.Point(11, 39);
-            this.lblUserEmpName.Name = "lblUserEmpName";
-            this.lblUserEmpName.Size = new System.Drawing.Size(378, 23);
-            this.lblUserEmpName.TabIndex = 6;
-            this.lblUserEmpName.Text = "Tên Emp";
-            // 
             // frmStorage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1269,7 +1206,6 @@
             this.pnlTop.ResumeLayout(false);
             this.pnlResourceInfo.ResumeLayout(false);
             this.pnlResourceInfo.PerformLayout();
-            this.panel7.ResumeLayout(false);
             this.pnlNewResource.ResumeLayout(false);
             this.pnlNewResource.PerformLayout();
             this.ResumeLayout(false);
@@ -1337,9 +1273,6 @@
         private System.Windows.Forms.ListBox lbxResource;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel pnlResourceInfo;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btnEditReturn;
-        private System.Windows.Forms.Button btnEditAccept_Materials;
         private System.Windows.Forms.Label lblEdit_ID_Mater;
         private System.Windows.Forms.Button btnEditPrevMater;
         private System.Windows.Forms.Panel panel8;
@@ -1370,8 +1303,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtSupplier;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtSupplier_Mar;
         private System.Windows.Forms.Label lblUserEmpName;
     }
 }

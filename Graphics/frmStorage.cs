@@ -53,14 +53,14 @@ namespace Graphics
 
 
             filterModeItemsMater = new Dictionary<String, String>();
-            filterModeItemsMater.Add("Mã nguyên liệu", "Id");
+            filterModeItemsMater.Add("Mã nguyên liệu", "ID");
             filterModeItemsMater.Add("Tên nguyên liệu", "Name");
             filterModeItemsMater.Add("Nhà cung cấp ", "Supplier");
             filterModeItemsMater.Add("Số lượng", "Ammount");
 
 
             filterModeItemsProd = new Dictionary<String, String>();
-            filterModeItemsProd.Add("Mã sản phẩm", "Id");
+            filterModeItemsProd.Add("Mã sản phẩm", "ID");
             filterModeItemsProd.Add("Tên sản phẩm", "Name");
 
 
@@ -92,7 +92,6 @@ namespace Graphics
                 lblEdit_ID_Mater.Text = current1.Id;
                 txtNameMarter.Text = current1.Name;
                 txtAmount_Marter.Text = current1.Ammount.ToString();
-                txtSupplier_Mar.Text = current1.Supplier;
             }
         }
 
@@ -359,6 +358,19 @@ namespace Graphics
                     Materials currPro = materList.MaterList[dgvMainTable.SelectedRows[0].Index];
                     lblEditID.Text = currPro.Id;
                     fillEnterials();
+
+                    if (currPro.getHistory().Count!= 0)
+                    {
+                        lbxHistory.DataSource = new BindingSource(currPro.getHistory(), null);
+                        lbxHistory.DisplayMember = "Key";
+                        lbxHistory.ValueMember = "Value";
+                    }
+                    else
+                    {
+                        lbxHistory.DataSource = new BindingSource(new KeyValuePair<String, String>("Không có lịch sử", "null"), null);
+                        lbxHistory.DisplayMember ="Key";
+                        lbxHistory.ValueMember = "Value";
+                    }
                 }
             }
         }
@@ -504,8 +516,11 @@ namespace Graphics
                 proList.saveChanges();
                 MessageBox.Show("Đã lưu thay đổi vào csdl");
             }
-
-            // cho xet mode 2
+            else if(mode == 2)
+            {
+                materList.saveChanges(Program.us);
+                MessageBox.Show("Đã lưu thay đổi vào csdl");
+            }
         }
 
         private void txtFilter_TextChanged(object sender, EventArgs e)

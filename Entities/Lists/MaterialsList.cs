@@ -12,16 +12,14 @@ namespace Entities.Lists
     {
         private List<Materials> materList;
         private SqlLink sqlLink;
-        private HashSet<String> modifiedId;
         private HashSet<String> deletedID;
         private HashSet<String> newMaterID;
+        private Dictionary<Materials, DateTime> MaterIn= new Dictionary<Materials, DateTime>();
 
         public MaterialsList()
         {
             this.MaterList = new List<Materials>();
-            this.modifiedId = new HashSet<String>();
             sqlLink = new SqlLink();
-            this.deletedID = new HashSet<String>();
             this.NewMaterID = new HashSet<String>();
         }
 
@@ -30,20 +28,26 @@ namespace Entities.Lists
 
         public void add(Materials newMater)
         {
-            this.materList.Add(newMater);
-            newMaterID.Add(newMater.Id);
+            Materials curr = this.find(newMater.Id);
+            if (curr == null)
+            {
+                this.materList.Add(newMater);
+                newMaterID.Add(newMater.Id);
+                MaterIn.Add(newMater, DateTime.Now);
+            }
+            else
+            {
+                newMater.Ammount += curr.Ammount;
+                MaterIn.Add(newMater, DateTime.Now);
+            }
+
+
         }
 
         public void loadFromDb()
         {
             this.MaterList = new List<Materials>();
-            String sqlString =
-                " select " +
-                " distinct(s.ResourcesID), [Name], [Amount], From_to " +
-                " from" +
-                " STORAGE s, STORAGELN s1" +
-                " where " +
-                " s.ResourcesID = s.ResourcesID" ;
+            String sqlString ="Select St.ResourcesID, St.Name, St.Amount from STORAGE St";
 
             DataTable materialsTable = sqlLink.Select(sqlString);
 
@@ -52,8 +56,7 @@ namespace Entities.Lists
                 String newMaterID = materialsTable.Rows[row][0].ToString();
                 String newMaterName = materialsTable.Rows[row][1].ToString();
                 double newMaterAmmount = Double.Parse(materialsTable.Rows[row][2].ToString());
-                String newMaterFromto= materialsTable.Rows[row][3].ToString();
-                Materials newMaters = new Materials(newMaterID, newMaterName, newMaterAmmount, newMaterFromto);
+                Materials newMaters = new Materials(newMaterID, newMaterName, newMaterAmmount, "");
                 this.materList.Add(newMaters);
             }
         }
@@ -102,6 +105,38 @@ namespace Entities.Lists
 
             return returnList;
         }
+
+        public void saveChanges(Users us)
+        {
+            foreach (String materID in this.newMaterID)
+            {
+                foreach (Materials currentMater in this.MaterList)
+                {
+                    if (currentMater.Id == materID)
+                    {
+
+                        String nonSelectString =
+                            String.Format("insert into STORAGE([ResourcesID], [Name], [Amount]) values('{0}', '{1}', '{2}')", 
+                                currentMater.Id, currentMater.Name, currentMater.Ammount);
+
+                        sqlLink.NonSelect(nonSelectString);
+                        break;
+                    }
+                }
+            }
+
+            foreach (KeyValuePair<Materials, DateTime> item in this.MaterIn)
+            {
+                String updateString = String.Format("update STORAGE set [Name]= '{0}', [Amount]= '{1}' where [ResourcesID] = '{2}'",
+                    item.Key.Name, item.Key.Ammount, item.Key.Ammount);
+                sqlLink.NonSelect(updateString);
+                String newString = String.Format("insert into [STORAGELN]([ProductID], [Date], [From_to], [EmpID]) values('{0}', '{1}', '{2}', '{3}')",
+                    item.Key.Id, item.Value.ToShortDateString()+" "+ item.Value.ToShortTimeString(), item.Key.Supplier, us.CurEmp.Id);
+                sqlLink.NonSelect(newString);
+            }
+
+        }
+
 
     }
 }
